@@ -104,7 +104,6 @@ type = 2
 position = Vector2( -832, -320 )
 rotation = 1.5708
 type = 3
-
 [connection signal="stomped" from="Player" to="." method="_on_Player_stomped"]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

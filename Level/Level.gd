@@ -73,6 +73,7 @@ func _on_ObjectiveFall_body_entered(body: PhysicsBody2D) -> void:
 
 func _on_ObjectiveWinter_body_entered(body: PhysicsBody2D) -> void:
 	turn_season(Common.Season.Winter)
+	WinterSnow.emitting = true
 
 func turn_season(season):
 	pass
