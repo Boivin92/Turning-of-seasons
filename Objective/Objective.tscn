@@ -1,10 +1,44 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Objective/Objective.gd" type="Script" id=1]
-[ext_resource path="res://Objective/prog art.png" type="Texture" id=2]
+[ext_resource path="res://Objective/fall/levier_leaf1.png" type="Texture" id=2]
+[ext_resource path="res://Objective/fall/levier_leaf2.png" type="Texture" id=3]
+[ext_resource path="res://Objective/fall/levier_leaf3.png" type="Texture" id=4]
+[ext_resource path="res://Objective/fall/levier_leaf4.png" type="Texture" id=5]
+[ext_resource path="res://Objective/summer/levier_sun1.png" type="Texture" id=6]
+[ext_resource path="res://Objective/summer/levier_sun2.png" type="Texture" id=7]
+[ext_resource path="res://Objective/summer/levier_sun3.png" type="Texture" id=8]
+[ext_resource path="res://Objective/summer/levier_sun4.png" type="Texture" id=9]
+[ext_resource path="res://Objective/spring/levier_flower1.png" type="Texture" id=10]
+[ext_resource path="res://Objective/spring/levier_flower2.png" type="Texture" id=11]
+[ext_resource path="res://Objective/spring/levier_flower3.png" type="Texture" id=12]
+[ext_resource path="res://Objective/spring/levier_flower4.png" type="Texture" id=13]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "summer",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "winter",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "spring",
+"speed": 5.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 42, 24 )
+extents = Vector2( 60, 32 )
 
 [node name="Objective" type="Area2D"]
 collision_layer = 4
@@ -13,10 +47,13 @@ __meta__ = {
 "_edit_group_": true
 }
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "spring"
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 40 )
+position = Vector2( 0, 32 )
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
-
+[connection signal="body_entered" from="." to="." method="_on_Objective_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
