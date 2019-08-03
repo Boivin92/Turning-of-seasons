@@ -23,7 +23,7 @@ func _process(delta):
 		$Tween.start()
 		$Player.brace_character()
 		_activate_particles(true)
-		remap_tileset()
+		#remap_tileset()
 		
 		
 func _activate_particles(emit : bool) -> void:
