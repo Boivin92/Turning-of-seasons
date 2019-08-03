@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 var velocity : Vector2 = Vector2()
-export (int) var gravity
-export (int) var run_speed
-export (int) var jump_speed
+export (int) var gravity : int
+export (int) var run_speed : int
+export (int) var jump_speed : int
 
 var pounding : bool
 
@@ -32,9 +32,9 @@ func get_input():
 		velocity.x += run_speed
 	if left:
 		velocity.x -= run_speed
-	if jump:
+	if jump && is_on_floor():
 		velocity.y = -jump_speed
-	if pound:
+	if pound && not is_on_floor():
 		velocity.y = 2000
 		velocity.x = 0
 		pounding = true
