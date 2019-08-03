@@ -12,13 +12,15 @@ func _ready():
 	pass # Replace with function body.
 
 func _physics_process(delta):
+	if is_on_floor():
+		velocity.y = 0
 	velocity.y += gravity * delta
 	if not pounding:
 		get_input()
 	velocity.y = clamp(velocity.y, -2000, 2000)
 	var airborne = not is_on_floor()
 	_set_sprite()
-	velocity = move_and_slide(velocity, Vector2(0, -1))
+	move_and_slide(velocity, Vector2(0, -1))
 	
 	if airborne && is_on_floor():
 		_shake_camera()
