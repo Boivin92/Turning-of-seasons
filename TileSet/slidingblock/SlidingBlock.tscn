@@ -11,6 +11,7 @@ extents = Vector2( 64, 64 )
 [node name="SlidingBlock" type="RigidBody2D"]
 collision_layer = 2
 collision_mask = 8
+mode = 2
 
 [node name="Slider" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
