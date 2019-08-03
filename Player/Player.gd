@@ -17,6 +17,7 @@ func _physics_process(delta):
 		get_input()
 	velocity.y = clamp(velocity.y, -2000, 2000)
 	var airborne = not is_on_floor()
+	_set_sprite()
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
 	if airborne && is_on_floor():
@@ -25,6 +26,13 @@ func _physics_process(delta):
 	if pounding && is_on_floor():
 		pounding = false
 		
+		
+func _set_sprite() -> void:
+	if velocity.x < 0:
+		$Sprite.flip_h = true
+	elif velocity.x > 0:
+		$Sprite.flip_h = false
+
 func _shake_camera():
 	$Camera2DWithShake.shake(0.4, 15, 8)
 	

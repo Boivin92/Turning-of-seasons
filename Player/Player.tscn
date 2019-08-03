@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Player/woddy_le_golem_base.png" type="Texture" id=2]
 [ext_resource path="res://Camera2DWithShake.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 30, 31 )
+extents = Vector2( 42.2928, 118.125 )
 
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 6
