@@ -12,12 +12,14 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		$Tween.start()
+		$Player.brace_character()
 		
 func GoToNextLevel():
 	get_tree().change_scene_to(NextLevel)
 
 func _on_Tween_tween_completed(object, key):
 	_prepare_tween()
+	$Player.release_bracing()
 
 func _prepare_tween():
 	$Tween.remove_all()

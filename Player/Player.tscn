@@ -16,6 +16,11 @@ animations = [ {
 }, {
 "frames": [  ],
 "loop": true,
+"name": "brace",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
 "name": "jump",
 "speed": 5.0
 }, {
@@ -45,8 +50,7 @@ jump_speed = 600
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "idle"
-frame = 1
+animation = "brace"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
