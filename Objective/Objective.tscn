@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Objective/Objective.gd" type="Script" id=1]
 [ext_resource path="res://Objective/fall/levier_leaf1.png" type="Texture" id=2]
@@ -9,10 +9,14 @@
 [ext_resource path="res://Objective/summer/levier_sun2.png" type="Texture" id=7]
 [ext_resource path="res://Objective/summer/levier_sun3.png" type="Texture" id=8]
 [ext_resource path="res://Objective/summer/levier_sun4.png" type="Texture" id=9]
-[ext_resource path="res://Objective/spring/levier_flower1.png" type="Texture" id=10]
-[ext_resource path="res://Objective/spring/levier_flower2.png" type="Texture" id=11]
-[ext_resource path="res://Objective/spring/levier_flower3.png" type="Texture" id=12]
-[ext_resource path="res://Objective/spring/levier_flower4.png" type="Texture" id=13]
+[ext_resource path="res://Objective/winter/levier_snow1.png" type="Texture" id=10]
+[ext_resource path="res://Objective/winter/levier_snow2.png" type="Texture" id=11]
+[ext_resource path="res://Objective/winter/levier_snow3.png" type="Texture" id=12]
+[ext_resource path="res://Objective/winter/levier_snow4.png" type="Texture" id=13]
+[ext_resource path="res://Objective/spring/levier_flower1.png" type="Texture" id=14]
+[ext_resource path="res://Objective/spring/levier_flower2.png" type="Texture" id=15]
+[ext_resource path="res://Objective/spring/levier_flower3.png" type="Texture" id=16]
+[ext_resource path="res://Objective/spring/levier_flower4.png" type="Texture" id=17]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -26,12 +30,12 @@ animations = [ {
 "name": "summer",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
 "loop": false,
 "name": "winter",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": false,
 "name": "spring",
 "speed": 5.0
