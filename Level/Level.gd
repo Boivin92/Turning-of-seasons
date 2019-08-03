@@ -11,6 +11,13 @@ func _ready():
 	_prepare_tween()
 	CurrentSeason = Common.Season.Spring
 
+func remap_tileset():
+	for x in range(-10, 10):
+		for y in range(-10, 10):
+			var cell = $TileMap.get_cell(x, y)
+			if (cell > 16):
+				$TileMap.set_cell(x, y, cell + 17)
+
 func _process(delta):
 	pass
 
@@ -75,6 +82,7 @@ func _on_Objective_activated(season):
 		music.PlayRotationSound()
 		$Player.brace_character()
 		_activate_particles(true)
+		remap_tileset()
 
 func _on_ClimbingBlock_body_entered(body):
 	if body.is_in_group("player"):
