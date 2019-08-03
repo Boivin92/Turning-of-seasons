@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "Camera2DWithShake",
 "language": "GDScript",
 "path": "res://Camera2DWithShake.gd"
+}, {
+"base": "Node",
+"class": "RandomSoundPlayer",
+"language": "GDScript",
+"path": "res://RandomSoundPlayer.gd"
 } ]
 _global_script_class_icons={
-"Camera2DWithShake": ""
+"Camera2DWithShake": "",
+"RandomSoundPlayer": ""
 }
 
 [application]
