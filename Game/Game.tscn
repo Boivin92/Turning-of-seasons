@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1179.96, 10 )
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+gravity = 350
+run_speed = 200
+jump_speed = 400
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -3.01492, 601.428 )
+collision_layer = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 73.1059, 0.753702 )
+scale = Vector2( 34.5148, 0.269882 )
+texture = ExtResource( 2 )
