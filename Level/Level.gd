@@ -15,15 +15,15 @@ func remap_tileset():
 	for x in range(-10, 10):
 		for y in range(-10, 10):
 			var cell = $TileMap.get_cell(x, y)
-			if (cell != $TileMap.INVALID_CELL):
-				$TileMap.set_cell(x, y, (cell + 18) % 36)
+			if (cell > 16):
+				$TileMap.set_cell(x, y, cell + 17)
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		$Tween.start()
 		$Player.brace_character()
 		_activate_particles(true)
-		#remap_tileset()
+		remap_tileset()
 		
 		
 func _activate_particles(emit : bool) -> void:
