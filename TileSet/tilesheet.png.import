@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloc_roche_1.png-aa5277f47ae5ff7fef0e05a778f1d182.stex"
+path="res://.import/tilesheet.png-414651b9650a119387f0e6961d8914f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/assets/bloc_roche_1.png"
-dest_files=[ "res://.import/bloc_roche_1.png-aa5277f47ae5ff7fef0e05a778f1d182.stex" ]
+source_file="res://TileSet/tilesheet.png"
+dest_files=[ "res://.import/tilesheet.png-414651b9650a119387f0e6961d8914f6.stex" ]
 
 [params]
 
