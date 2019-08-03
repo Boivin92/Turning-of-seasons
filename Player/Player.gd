@@ -18,7 +18,7 @@ func _ready():
 	
 func brace_character():
 	available = false
-	$AnimatedSprite.play("brace")
+	$AnimatedSprite.play("idle") # TODO remplacer par "brace"
 	
 func release_bracing():
 	available = true
@@ -45,6 +45,9 @@ func _physics_process(delta):
 		
 		
 func _set_sprite(slide: Vector2) -> void:
+	if !available:
+		return
+
 	if slide.x == 0:
 		$AnimatedSprite.play("idle")
 		print("Play Idle")
@@ -58,7 +61,7 @@ func _set_sprite(slide: Vector2) -> void:
 	if slide.y > 0:
 		$AnimatedSprite.play("fall")
 		print("Play Fall")
-		
+
 	if slide.x < 0:
 		$AnimatedSprite.flip_h = true
 	elif slide.x > 0:
