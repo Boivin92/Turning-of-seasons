@@ -2,6 +2,8 @@ extends Node2D
 
 signal objective_got
 
+const Common = preload("res://Data/Common.gd")
+
 export (int) var RotationOnAdvance : int = 90
 export (PackedScene) var NextLevel
 
@@ -47,3 +49,22 @@ func _on_Player_stomped() -> void:
 
 func _on_Timer_timeout() -> void:
 	_activate_particles(false)
+
+
+func _on_ObjectiveSpring_body_entered(body: PhysicsBody2D) -> void:
+	turn_season(Common.Season.Spring)
+
+
+func _on_ObjectiveSummer_body_entered(body: PhysicsBody2D) -> void:
+	turn_season(Common.Season.Summer)
+
+
+func _on_ObjectiveFall_body_entered(body: PhysicsBody2D) -> void:
+	turn_season(Common.Season.Fall)
+
+
+func _on_ObjectiveWinter_body_entered(body: PhysicsBody2D) -> void:
+	turn_season(Common.Season.Winter)
+
+func turn_season(season):
+	pass

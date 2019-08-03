@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Level/Level.gd" type="Script" id=1]
 [ext_resource path="res://Level/tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Objective/Objective.tscn" type="PackedScene" id=4]
 
 [sub_resource type="ParticlesMaterial" id=1]
 emission_shape = 2
@@ -53,6 +54,7 @@ jump_speed = 810
 [node name="Tween" type="Tween" parent="."]
 
 [node name="particles" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="ParticlesTop" type="Particles2D" parent="particles"]
 position = Vector2( -0.343262, -1086.93 )
@@ -84,6 +86,29 @@ process_material = SubResource( 3 )
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="ObjectiveSpring" parent="." instance=ExtResource( 4 )]
+position = Vector2( -320, 960 )
+
+[node name="ObjectiveSummer" parent="." instance=ExtResource( 4 )]
+position = Vector2( 960, 448 )
+rotation = -1.5708
+type = 1
+
+[node name="ObjectiveFall" parent="." instance=ExtResource( 4 )]
+position = Vector2( -64, -320 )
+rotation = 3.14159
+type = 2
+
+[node name="ObjectiveWinter" parent="." instance=ExtResource( 4 )]
+position = Vector2( -832, -320 )
+rotation = 1.5708
+type = 3
+
 [connection signal="stomped" from="Player" to="." method="_on_Player_stomped"]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="ObjectiveSpring" to="." method="_on_ObjectiveSpring_body_entered"]
+[connection signal="body_entered" from="ObjectiveSummer" to="." method="_on_ObjectiveSummer_body_entered"]
+[connection signal="body_entered" from="ObjectiveFall" to="." method="_on_ObjectiveFall_body_entered"]
+[connection signal="body_entered" from="ObjectiveWinter" to="." method="_on_ObjectiveWinter_body_entered"]
