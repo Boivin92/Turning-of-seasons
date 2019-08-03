@@ -1,8 +1,41 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Level/Level.gd" type="Script" id=1]
 [ext_resource path="res://Level/tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 2
+emission_box_extents = Vector3( 800, 50, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 150, 0 )
+angular_velocity = -41.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 4.0
+color = Color( 0.619608, 0.372549, 0.243137, 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 800, 50, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 150, 0 )
+angular_velocity = -41.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 4.0
+color = Color( 0.619608, 0.372549, 0.243137, 1 )
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 50, 800, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 150, 0 )
+angular_velocity = -41.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 4.0
+color = Color( 0.619608, 0.372549, 0.243137, 1 )
 
 [node name="Level" type="Node2D"]
 script = ExtResource( 1 )
@@ -18,4 +51,39 @@ position = Vector2( -961.698, 896.751 )
 jump_speed = 810
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="particles" type="Node" parent="."]
+
+[node name="ParticlesTop" type="Particles2D" parent="particles"]
+position = Vector2( 900.938, 75.7215 )
+emitting = false
+amount = 500
+lifetime = 5.0
+process_material = SubResource( 2 )
+
+[node name="ParticlesBottom" type="Particles2D" parent="particles"]
+position = Vector2( 893.386, 1732.26 )
+emitting = false
+amount = 500
+lifetime = 5.0
+process_material = SubResource( 3 )
+
+[node name="ParticlesLeft" type="Particles2D" parent="particles"]
+position = Vector2( 60.0822, 919.095 )
+emitting = false
+amount = 500
+lifetime = 5.0
+process_material = SubResource( 1 )
+
+[node name="ParticlesRight" type="Particles2D" parent="particles"]
+position = Vector2( 1729.21, 919.095 )
+emitting = false
+amount = 500
+lifetime = 5.0
+process_material = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+[connection signal="stomped" from="Player" to="." method="_on_Player_stomped"]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

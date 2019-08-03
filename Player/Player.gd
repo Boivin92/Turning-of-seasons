@@ -8,6 +8,8 @@ export (int) var jump_speed : int
 var pounding : bool
 var available : bool = true
 
+signal stomped
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -22,14 +24,17 @@ func release_bracing():
 func _physics_process(delta):
 	if is_on_floor():
 		velocity.y = 0
-	velocity.y += gravity * delta
+	else:
+		velocity.y += gravity * delta
+	
 	if not pounding && available:
 		get_input()
+	
 	velocity.y = clamp(velocity.y, -2000, 2000)
 	var airborne = not is_on_floor()
 	
-	move_and_slide(velocity, Vector2(0, -1), false, 4, 0.523599)
-	_set_sprite()
+	var slide = move_and_slide(velocity, Vector2(0, -1), false, 4, 0.523599)
+	_set_sprite(slide)
 	if airborne && is_on_floor():
 		_shake_camera()
 		
@@ -37,28 +42,29 @@ func _physics_process(delta):
 		pounding = false
 		
 		
-func _set_sprite() -> void:
-	if available:
-		if velocity.x == 0:
-			$AnimatedSprite.play("idle")
-		else:
-			$AnimatedSprite.play("walk")
+func _set_sprite(slide: Vector2) -> void:
+	if slide.x == 0:
+		$AnimatedSprite.play("idle")
+		print("Play Idle")
 	else:
-		#TODO: play bracing animation
-		pass
+		$AnimatedSprite.play("walk")
+		print("Play Walk")
 		
-	if velocity.y < 0:
+	if slide.y < 0:
 		$AnimatedSprite.play("jump")
-	if velocity.y > 0:
+		print("Play Jump")
+	if slide.y > 0:
 		$AnimatedSprite.play("fall")
+		print("Play Fall")
 		
-	if velocity.x < 0:
+	if slide.x < 0:
 		$AnimatedSprite.flip_h = true
-	elif velocity.x > 0:
+	elif slide.x > 0:
 		$AnimatedSprite.flip_h = false
 
 func _shake_camera():
 	$Camera2DWithShake.shake(0.4, 15, 8)
+	emit_signal("stomped")
 	
 func get_input():
 	var right = Input.is_action_pressed("right")
