@@ -1,41 +1,56 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://ClimbingBlock/bloc_U4.png" type="Texture" id=1]
-[ext_resource path="res://ClimbingBlock/bloc_U2.png" type="Texture" id=2]
-[ext_resource path="res://ClimbingBlock/bloc_border.png" type="Texture" id=3]
-[ext_resource path="res://ClimbingBlock/bloc_shaded2.png" type="Texture" id=4]
+[ext_resource path="res://ClimbingBlock/bloc_roche_1.png" type="Texture" id=1]
+[ext_resource path="res://ClimbingBlock/bloc_border.png" type="Texture" id=2]
+[ext_resource path="res://ClimbingBlock/bloc_shaded1.png" type="Texture" id=3]
+[ext_resource path="res://ClimbingBlock/bloc_U3.png" type="Texture" id=4]
+[ext_resource path="res://ClimbingBlock/bloc_U1.png" type="Texture" id=5]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 1 ) ],
-"loop": false,
-"name": "Summer_Base",
+"loop": true,
+"name": "Winter",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ) ],
 "loop": false,
+"name": "Spring",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Summer_Body",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Summer_Base",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Fall_Head",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
 "name": "Summer_Head",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
-"loop": false,
-"name": "Spring",
+"loop": true,
+"name": "Fall_Body",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
-"loop": false,
-"name": "Summer_Body",
+"loop": true,
+"name": "Fall_Base",
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 62.3181, 62.2919 )
-
-[node name="ClimbingBlock" type="Area2D"]
+[node name="ClimbingBlock" type="Node2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 2 )
-animation = "Spring"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+frames = SubResource( 1 )
+animation = "Fall_Base"

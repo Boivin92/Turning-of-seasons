@@ -4,9 +4,11 @@ var velocity : Vector2 = Vector2()
 export (int) var gravity : int
 export (int) var run_speed : int
 export (int) var jump_speed : int
+export (int) var climb_speed : int
 
 var pounding : bool
 var available : bool = true
+var is_on_ladder = false
 
 signal stomped
 
@@ -24,7 +26,7 @@ func release_bracing():
 func _physics_process(delta):
 	if is_on_floor():
 		velocity.y = 0
-	else:
+	elif !is_on_ladder:
 		velocity.y += gravity * delta
 	
 	if not pounding && available:
@@ -71,6 +73,7 @@ func get_input():
 	var left = Input.is_action_pressed("left")
 	var jump = Input.is_action_pressed("jump")
 	var pound = Input.is_action_pressed("pound")
+	var climb = Input.is_action_pressed("climb")
 	
 	velocity.x = 0
 	if right:
@@ -83,3 +86,5 @@ func get_input():
 		velocity.y = 2000
 		velocity.x = 0
 		pounding = true
+	if climb && is_on_ladder:
+		velocity.y = -climb_speed

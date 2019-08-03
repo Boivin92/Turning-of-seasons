@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloc_shaded2.png-e251f6eff019d62b6899fe661308b78f.stex"
+path="res://.import/bloc_shaded1.png-fcf3faeb940adeb6c45f09d7fc95e63c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ClimbingBlock/bloc_shaded2.png"
-dest_files=[ "res://.import/bloc_shaded2.png-e251f6eff019d62b6899fe661308b78f.stex" ]
+source_file="res://ClimbingBlock/bloc_shaded1.png"
+dest_files=[ "res://.import/bloc_shaded1.png-fcf3faeb940adeb6c45f09d7fc95e63c.stex" ]
 
 [params]
 

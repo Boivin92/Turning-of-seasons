@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloc_U4.png-95a9c738cf9541f27e15c1bc24f4d166.stex"
+path="res://.import/bloc_U3.png-8b5f0ff682bab23fcc06598353f2a482.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ClimbingBlock/bloc_U4.png"
-dest_files=[ "res://.import/bloc_U4.png-95a9c738cf9541f27e15c1bc24f4d166.stex" ]
+source_file="res://ClimbingBlock/bloc_U3.png"
+dest_files=[ "res://.import/bloc_U3.png-8b5f0ff682bab23fcc06598353f2a482.stex" ]
 
 [params]
 
