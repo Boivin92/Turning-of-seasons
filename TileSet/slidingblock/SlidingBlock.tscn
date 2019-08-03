@@ -25,4 +25,4 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="StaticBody2D"]
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 128, 128 )
+region_rect = Rect2( 2048, 0, 128, 128 )
