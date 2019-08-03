@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/prog art.png-590c8cee3249ff44f62dca54378d1d9e.stex"
+path="res://.import/levier_leaf2.png-b54c6adcb8d691e1501b483cfd449980.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objective/prog art.png"
-dest_files=[ "res://.import/prog art.png-590c8cee3249ff44f62dca54378d1d9e.stex" ]
+source_file="res://Objective/fall/levier_leaf2.png"
+dest_files=[ "res://.import/levier_leaf2.png-b54c6adcb8d691e1501b483cfd449980.stex" ]
 
 [params]
 
