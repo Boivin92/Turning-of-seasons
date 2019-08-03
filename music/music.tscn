@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://music/music.gd" type="Script" id=1]
+[ext_resource path="res://music/music_calm_green_lake_serenade.wav" type="AudioStream" id=2]
+
+[node name="Control" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="TextureButton" type="CheckBox" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+focus_mode = 0
+pressed = true
+enabled_focus_mode = 0
+text = "Music"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+[connection signal="toggled" from="TextureButton" to="." method="_on_TextureButton_toggled"]

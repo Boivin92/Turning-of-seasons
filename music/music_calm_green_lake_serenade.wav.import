@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/music_calm_green_lake_serenade.wav-5ac6bc45b89dd0c82ee2f6cfb40999c9.sample"
+
+[deps]
+
+source_file="res://music/music_calm_green_lake_serenade.wav"
+dest_files=[ "res://.import/music_calm_green_lake_serenade.wav-5ac6bc45b89dd0c82ee2f6cfb40999c9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0
