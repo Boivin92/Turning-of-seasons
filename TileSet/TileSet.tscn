@@ -5,7 +5,6 @@
 [node name="TileSet" type="Node2D"]
 
 [node name="StoneWall" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 128, 128 )
@@ -16,6 +15,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StoneWall/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="StoneWall2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StoneWall2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StoneWall2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
 [node name="StoneSmooth" type="Sprite" parent="."]
@@ -32,6 +45,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StoneSmooth/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="StoneSmooth2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StoneSmooth2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StoneSmooth2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameBottomLeft" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -44,6 +71,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomLeft/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="FrameBottomLeft2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameBottomLeft2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomLeft2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
 [node name="FrameBottomA" type="Sprite" parent="."]
@@ -60,6 +101,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomA/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="FrameBottomA2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 384, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameBottomA2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomA2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameBottomB" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -72,6 +127,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomB/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="FrameBottomB2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 512, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameBottomB2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomB2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
 [node name="FrameBottomC" type="Sprite" parent="."]
@@ -88,6 +157,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomC/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="FrameBottomC2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 640, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameBottomC2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomC2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameBottomRight" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -100,6 +183,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomRight/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="FrameBottomRight2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 768, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameBottomRight2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameBottomRight2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
 [node name="FrameRightA" type="Sprite" parent="."]
@@ -116,6 +213,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameRightA/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="FrameRightA2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 896, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameRightA2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameRightA2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameRightB" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -128,6 +239,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameRightB/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="FrameRightB2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1024, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameRightB2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameRightB2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
 [node name="FrameRightC" type="Sprite" parent="."]
@@ -144,6 +269,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameRightC/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="FrameRightC2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1152, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameRightC2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameRightC2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameTopRight" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -156,6 +295,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopRight/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="FrameTopRight2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1280, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameTopRight2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopRight2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
 [node name="FrameTopA" type="Sprite" parent="."]
@@ -172,6 +325,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopA/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="FrameTopA2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1408, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameTopA2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopA2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameTopB" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -184,6 +351,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopB/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="FrameTopB2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1536, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameTopB2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopB2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
 [node name="FrameTopC" type="Sprite" parent="."]
@@ -200,6 +381,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopC/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="FrameTopC2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1664, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameTopC2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopC2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameTopLeft" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -212,6 +407,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopLeft/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="FrameTopLeft2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1792, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameTopLeft2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameTopLeft2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
 [node name="FrameLeftA" type="Sprite" parent="."]
@@ -228,6 +437,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameLeftA/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="FrameLeftA2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1920, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameLeftA2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameLeftA2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameLeftB" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -242,6 +465,20 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameLeftB/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 
+[node name="FrameLeftB2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 2048, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameLeftB2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameLeftB2/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
 [node name="FrameLeftC" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -254,5 +491,19 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameLeftC/StaticBody2D"]
+polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
+
+[node name="FrameLeftC2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 2176, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrameLeftC2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FrameLeftC2/StaticBody2D"]
 polygon = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 

@@ -35,7 +35,7 @@ func _physics_process(delta):
 	
 	var slide = move_and_slide(velocity, Vector2(0, -1), false, 4, 0.523599)
 	_set_sprite(slide)
-	if airborne && is_on_floor():
+	if airborne && is_on_floor() && velocity.y > 50:
 		_shake_camera()
 		
 	if pounding && is_on_floor():
