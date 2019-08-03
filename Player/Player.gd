@@ -28,10 +28,13 @@ func _physics_process(delta):
 		
 		
 func _set_sprite() -> void:
+	if velocity.x == 0:
+		$AnimatedSprite.play("idle")
+	
 	if velocity.x < 0:
-		$Sprite.flip_h = true
+		$AnimatedSprite.flip_h = true
 	elif velocity.x > 0:
-		$Sprite.flip_h = false
+		$AnimatedSprite.flip_h = false
 
 func _shake_camera():
 	$Camera2DWithShake.shake(0.4, 15, 8)
