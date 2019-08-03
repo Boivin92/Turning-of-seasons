@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/footstep_concrete_land_v2_06.wav-91f82d5b70d40dd29b9f951934e00888.sample"
+
+[deps]
+
+source_file="res://Player/footstep_concrete_land_v2_06.wav"
+dest_files=[ "res://.import/footstep_concrete_land_v2_06.wav-91f82d5b70d40dd29b9f951934e00888.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

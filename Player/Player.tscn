@@ -11,13 +11,13 @@
 [ext_resource path="res://Player/Walk/character_walk4.png" type="Texture" id=9]
 [ext_resource path="res://Player/Walk/character_walk5.png" type="Texture" id=10]
 [ext_resource path="res://Player/Walk/character_walk6.png" type="Texture" id=11]
-[ext_resource path="res://Player/fall/character_fall2.png" type="Texture" id=12]
-[ext_resource path="res://Player/fall/character_fall3.png" type="Texture" id=13]
-[ext_resource path="res://Player/jump/character_jump1.png" type="Texture" id=14]
-[ext_resource path="res://Player/jump/character_jump2.png" type="Texture" id=15]
-[ext_resource path="res://Player/jump/character_jump3.png" type="Texture" id=16]
-[ext_resource path="res://Player/jump/character_jump4.png" type="Texture" id=17]
-[ext_resource path="res://Player/jump/character_jump5.png" type="Texture" id=18]
+[ext_resource path="res://Player/jump/character_jump1.png" type="Texture" id=12]
+[ext_resource path="res://Player/jump/character_jump2.png" type="Texture" id=13]
+[ext_resource path="res://Player/jump/character_jump3.png" type="Texture" id=14]
+[ext_resource path="res://Player/jump/character_jump4.png" type="Texture" id=15]
+[ext_resource path="res://Player/jump/character_jump5.png" type="Texture" id=16]
+[ext_resource path="res://Player/fall/character_fall2.png" type="Texture" id=17]
+[ext_resource path="res://Player/fall/character_fall3.png" type="Texture" id=18]
 [ext_resource path="res://Camera2DWithShake.gd" type="Script" id=19]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -37,15 +37,15 @@ animations = [ {
 "name": "brace",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "fall",
-"speed": 2.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
 "loop": false,
 "name": "jump",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "fall",
+"speed": 2.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -64,7 +64,7 @@ jump_speed = 800
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "walk"
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
