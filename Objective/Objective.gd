@@ -24,9 +24,10 @@ func _ready() -> void:
 
 
 func _on_Objective_body_entered(body: PhysicsBody2D) -> void:
-	if body && !activated:
+	if body && !activated && get_parent().CurrentSeason == type:
 		activated = true
 		$AnimatedSprite.play()
+		music.PlayLeverSound()
 
 
 func _on_AnimatedSprite_animation_finished() -> void:

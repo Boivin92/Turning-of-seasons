@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/metal_small_gear_lever_winding_03.wav-4d9945d251c436c134c1d856f3675517.sample"
+
+[deps]
+
+source_file="res://Level/metal_small_gear_lever_winding_03.wav"
+dest_files=[ "res://.import/metal_small_gear_lever_winding_03.wav-4d9945d251c436c134c1d856f3675517.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
