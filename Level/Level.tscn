@@ -79,6 +79,7 @@ jump_speed = 810
 [node name="Tween" type="Tween" parent="."]
 
 [node name="particles" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="ParticlesTop" type="Particles2D" parent="particles"]
 position = Vector2( -0.343262, -1086.93 )
