@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cinematic_LowDrone1.wav-5594037f2cd3b0fc08c6de57d4e60478.sample"
+
+[deps]
+
+source_file="res://music/cinematic_LowDrone1.wav"
+dest_files=[ "res://.import/cinematic_LowDrone1.wav-5594037f2cd3b0fc08c6de57d4e60478.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
