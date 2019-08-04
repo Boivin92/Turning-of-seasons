@@ -7,8 +7,15 @@ export (int) var jump_speed : int
 export (int) var climb_speed : int
 
 var pounding : bool
-var available : bool = true
+var braced : bool = false
 var is_on_ladder = false
+
+const IDLE = "idle"
+const WALK = "walk"
+const JUMP = "jump"
+const FALL = "fall"
+const CLIMB = "climb"
+const BRACE = "idle"
 
 signal stomped
 
@@ -17,11 +24,10 @@ func _ready():
 	pass # Replace with function body.
 	
 func brace_character():
-	available = false
-	$AnimatedSprite.play("idle") # TODO remplacer par "brace"
+	braced = true
 	
 func release_bracing():
-	available = true
+	braced = false
 
 func _physics_process(delta):
 	if is_on_floor():
@@ -29,13 +35,15 @@ func _physics_process(delta):
 	elif !is_on_ladder:
 		velocity.y += gravity * delta
 	
-	if not pounding && available:
+	if not pounding && not braced:
 		get_input()
 	
 	velocity.y = clamp(velocity.y, -2000, 2000)
 	var airborne = not is_on_floor()
 	
 	var slide = move_and_slide(velocity, Vector2(0, -1), false, 4, 0.523599)
+	if velocity.y < 0 && slide.y >= 0:
+		velocity.y =0
 	_set_sprite(slide)
 	
 	if airborne && is_on_floor() && velocity.y > 50:
@@ -50,32 +58,25 @@ func _physics_process(delta):
 			raycastReturn.crumble()
 		
 func _set_sprite(slide: Vector2) -> void:
-	if !available:
+	if braced:
+		$AnimatedSprite.play(BRACE)
 		return
-		
-	if slide.x == 0 && is_on_floor():
-		$AnimatedSprite.play("idle")
-		print("Play Idle")
-	elif is_on_floor() && !is_on_ladder:
-		$AnimatedSprite.play("walk")
-		print("Play Walk")
-	elif is_on_ladder && slide.y != 0:
-		$AnimatedSprite.play("climb")
-		print("Play Climb")
-	elif slide.y < 0:
-		$AnimatedSprite.play("jump")
-		print("Play Jump")
-	elif slide.y > 0:
-		$AnimatedSprite.play("fall")
-		print("Play Fall")
-	elif is_on_ladder:
-		$AnimatedSprite.play("idle")
-		print("Play Idle")
-		
+
 	if slide.x < 0:
 		$AnimatedSprite.flip_h = true
 	elif slide.x > 0:
 		$AnimatedSprite.flip_h = false
+
+	var anim = IDLE
+	if slide.x != 0:
+		anim = WALK
+	if slide.y < 0:
+		anim = JUMP
+	if slide.y > 0:
+		anim = FALL
+	if is_on_ladder and slide.y != 0:
+		anim = CLIMB
+	$AnimatedSprite.play(anim)
 
 func bounce(bouncyPower : int):
 	if not is_on_floor() && velocity.y > 0:

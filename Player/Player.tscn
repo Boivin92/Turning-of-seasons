@@ -100,4 +100,5 @@ sounds = [ ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource(
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2( 0, 100 )
 collision_mask = 2
+
 [connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
