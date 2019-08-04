@@ -37,6 +37,7 @@ emission_shape = 2
 emission_box_extents = Vector3( 50, 800, 1 )
 flag_disable_z = true
 gravity = Vector3( 0, 150, 0 )
+angular_velocity = 0.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 4.0
@@ -79,11 +80,12 @@ tile_data = PoolIntArray( -2097185, 12, 0, -2097184, 11, 0, -2097183, 9, 0, -209
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 128, 128 )
+collision_layer = 8
+collision_mask = 24
 format = 1
 tile_data = PoolIntArray( -1638394, 5, 0, -1638393, 7, 0, -1572858, 1, 0, -1572856, 9, 0, -1507322, 2, 0, -1507321, 0, 0, -1507320, 3, 0, -786425, 5, 0, -786424, 0, 0, -786423, 0, 0, -786422, 0, 0, -786421, 0, 0, -786420, 0, 0, -786419, 0, 0, -786418, 7, 0, -720889, 1, 0, -655353, 8, 0, -262136, 6, 0, -262135, 0, 0, -262134, 0, 0, -262133, 0, 0, -262132, 7, 0, -262125, 9, 0, -196589, 1, 0, -131053, 1, 0, -65517, 8, 0, 196614, 5, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 7, 0, 262150, 1, 0, 327686, 1, 0, 393222, 1, 0, 458758, 1, 0, 524294, 1, 0, 589830, 8, 0, 1179638, 5, 0, 1179639, 0, 0, 1179640, 0, 0, 1179641, 0, 0, 1179642, 7, 0, 1245174, 8, 0 )
 
 [node name="SlidingBlocks" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="SlidingBlockLarge" parent="SlidingBlocks" instance=ExtResource( 4 )]
 position = Vector2( 5696, 2560 )
