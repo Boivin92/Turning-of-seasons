@@ -1,51 +1,35 @@
-[gd_scene load_steps=7 format=2]
-
-[ext_resource path="res://ClimbingBlock/bloc_roche_1.png" type="Texture" id=1]
-[ext_resource path="res://ClimbingBlock/bloc_border.png" type="Texture" id=2]
-[ext_resource path="res://ClimbingBlock/bloc_shaded1.png" type="Texture" id=3]
-[ext_resource path="res://ClimbingBlock/bloc_U3.png" type="Texture" id=4]
-[ext_resource path="res://ClimbingBlock/bloc_U1.png" type="Texture" id=5]
+[gd_scene load_steps=2 format=2]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
+"frames": [  ],
 "loop": true,
-"name": "Winter",
+"name": "Fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ) ],
+"frames": [  ],
 "loop": false,
 "name": "Spring",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ) ],
+"frames": [  ],
+"loop": true,
+"name": "Winter",
+"speed": 5.0
+}, {
+"frames": [  ],
 "loop": true,
 "name": "Summer_Body",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "Summer_Base",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "Fall_Head",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [  ],
 "loop": true,
 "name": "Summer_Head",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ) ],
+"frames": [  ],
 "loop": true,
-"name": "Fall_Body",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "Fall_Base",
+"name": "Summer_Base",
 "speed": 5.0
 } ]
 
@@ -53,4 +37,4 @@ animations = [ {
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "Fall_Base"
+animation = "Fall"

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloc_border.png-0d5414da6dc7c29911a36933ee1117ea.stex"
+path="res://.import/bloc_MOVE_BOLT.png-20aed88eeb1fe3d2b72d643d701c8e68.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ClimbingBlock/bloc_border.png"
-dest_files=[ "res://.import/bloc_border.png-0d5414da6dc7c29911a36933ee1117ea.stex" ]
+source_file="res://TileSet/slidingblock/sprites/bloc_MOVE_BOLT.png"
+dest_files=[ "res://.import/bloc_MOVE_BOLT.png-20aed88eeb1fe3d2b72d643d701c8e68.stex" ]
 
 [params]
 

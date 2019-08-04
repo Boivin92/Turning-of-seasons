@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloc_roche_1.png-98974696ea52103835b7c72fa63f7dd9.stex"
+path="res://.import/bloc_MOVE.png-bbc258d6d7069d8d9fa39211fdb7bdab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ClimbingBlock/bloc_roche_1.png"
-dest_files=[ "res://.import/bloc_roche_1.png-98974696ea52103835b7c72fa63f7dd9.stex" ]
+source_file="res://TileSet/slidingblock/sprites/bloc_MOVE.png"
+dest_files=[ "res://.import/bloc_MOVE.png-bbc258d6d7069d8d9fa39211fdb7bdab.stex" ]
 
 [params]
 
