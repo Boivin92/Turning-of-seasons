@@ -15,6 +15,7 @@ emission_shape = 2
 emission_box_extents = Vector3( 800, 50, 1 )
 flag_disable_z = true
 gravity = Vector3( 0, 150, 0 )
+angular_velocity = 0.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 4.0
@@ -25,6 +26,7 @@ emission_shape = 2
 emission_box_extents = Vector3( 800, 50, 1 )
 flag_disable_z = true
 gravity = Vector3( 0, 150, 0 )
+angular_velocity = 0.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 4.0
@@ -40,28 +42,28 @@ orbit_velocity_random = 0.0
 scale = 4.0
 color = Color( 0.619608, 0.372549, 0.243137, 1 )
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 64, 192 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 64, 192 )
+
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 64, 192 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 64, 192 )
-
-[sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 64, 192 )
-
-[sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 64, 256 )
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 64, 512 )
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 64, 640 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 64, 768 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 64, 1536 )
 
 [node name="Level" type="Node2D"]
@@ -351,10 +353,8 @@ position = Vector2( 704, 128 )
 rotation = 1.5708
 
 [node name="vignes" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="ClimbingBlock" type="Area2D" parent="vignes"]
-editor/display_folded = true
 position = Vector2( 7616, 4736 )
 rotation = 4.71239
 __meta__ = {
@@ -370,10 +370,9 @@ position = Vector2( 0, 128 )
 position = Vector2( 0, -128 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock"]
-shape = SubResource( 6 )
+shape = SubResource( 4 )
 
 [node name="ClimbingBlock2" type="Area2D" parent="vignes"]
-editor/display_folded = true
 position = Vector2( 6080, 2944 )
 rotation = 4.71239
 __meta__ = {
@@ -381,7 +380,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock2"]
-shape = SubResource( 7 )
+shape = SubResource( 5 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock2" instance=ExtResource( 9 )]
 position = Vector2( 0, 128 )
@@ -392,7 +391,6 @@ position = Vector2( 0, 128 )
 position = Vector2( 0, -128 )
 
 [node name="ClimbingBlock3" type="Area2D" parent="vignes"]
-editor/display_folded = true
 position = Vector2( 7616, 6016 )
 rotation = 4.71239
 __meta__ = {
@@ -400,7 +398,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock3"]
-shape = SubResource( 8 )
+shape = SubResource( 6 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock3" instance=ExtResource( 9 )]
 position = Vector2( 0, 128 )
@@ -419,7 +417,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock4"]
-shape = SubResource( 9 )
+shape = SubResource( 7 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock4" instance=ExtResource( 9 )]
 position = Vector2( 0, 192 )
@@ -442,7 +440,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock5"]
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
 position = Vector2( 0, 448 )
@@ -477,7 +475,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock6"]
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
 position = Vector2( 0, 448 )
@@ -512,7 +510,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock7"]
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
 position = Vector2( 0, 448 )
@@ -547,7 +545,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock8"]
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
 position = Vector2( 0, 448 )
@@ -582,7 +580,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock9"]
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
 position = Vector2( 0, 448 )
@@ -617,7 +615,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock10"]
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
 position = Vector2( 0, 448 )
@@ -652,7 +650,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock11"]
-shape = SubResource( 11 )
+shape = SubResource( 9 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
 position = Vector2( 0, 576 )
@@ -693,7 +691,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock12"]
-shape = SubResource( 12 )
+shape = SubResource( 10 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
 position = Vector2( 0, 704 )
@@ -740,7 +738,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock13"]
-shape = SubResource( 13 )
+shape = SubResource( 11 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
 position = Vector2( 0, 1472 )

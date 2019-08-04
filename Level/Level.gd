@@ -63,6 +63,9 @@ func _on_Timer_timeout() -> void:
 
 func _on_Objective_activated(season):
 	if CurrentSeason == season :
+		_change_blocks(season)
+		_change_shrooms(season)
+		_change_vines(season)
 		match season :
 			Common.Season.Spring:
 				CurrentSeason =  Common.Season.Summer
@@ -110,6 +113,37 @@ func _on_Objective_activated(season):
 func _on_ClimbingBlock_body_entered(body):
 	if body.is_in_group("player"):
 		body.is_on_ladder = true
+
+func _change_shrooms(season):
+	for shroom in $Shrooms.get_children():
+		match season:
+			Common.Season.Spring:
+				shroom.Spring()
+			Common.Season.Summer:
+				shroom.Summer()
+			Common.Season.Fall:
+				shroom.Fall()
+			Common.Season.Winter:
+				shroom.Winter()
+	
+				
+func _change_blocks(season):
+	for block in $CrumblingBlocks.get_children():
+		match season:
+			Common.Season.Spring:
+				block.Spring()
+			Common.Season.Summer:
+				block.Summer()
+			Common.Season.Fall:
+				block.Fall()
+			Common.Season.Winter:
+				block.Winter()
+
+func _change_vines(season):
+	for vine in $vignes.get_children():
+		for node in vine.get_children():
+			pass
+	pass
 
 func _on_ClimbingBlock_body_exited(body):
 	if body.is_in_group("player"):
