@@ -7,8 +7,15 @@ export (int) var jump_speed : int
 export (int) var climb_speed : int
 
 var pounding : bool
-var available : bool = true
+var braced : bool = false
 var is_on_ladder = false
+
+const IDLE = "idle"
+const WALK = "walk"
+const JUMP = "jump"
+const FALL = "fall"
+const CLIMB = "climb"
+const BRACE = "idle"
 
 signal stomped
 
@@ -17,11 +24,10 @@ func _ready():
 	pass # Replace with function body.
 	
 func brace_character():
-	available = false
-	$AnimatedSprite.play("idle") # TODO remplacer par "brace"
+	braced = true
 	
 func release_bracing():
-	available = true
+	braced = false
 
 func _physics_process(delta):
 	if is_on_floor():
@@ -29,43 +35,48 @@ func _physics_process(delta):
 	elif !is_on_ladder:
 		velocity.y += gravity * delta
 	
-	if not pounding && available:
+	if not pounding && not braced:
 		get_input()
 	
 	velocity.y = clamp(velocity.y, -2000, 2000)
 	var airborne = not is_on_floor()
 	
 	var slide = move_and_slide(velocity, Vector2(0, -1), false, 4, 0.523599)
+	if velocity.y < 0 && slide.y >= 0:
+		velocity.y =0
 	_set_sprite(slide)
+	
 	if airborne && is_on_floor() && velocity.y > 50:
 		_shake_camera()
 		
 	if pounding && is_on_floor():
 		pounding = false
 		
+	var raycastReturn = $RayCast2D.get_collider()
+	if raycastReturn != null:
+		if raycastReturn.is_in_group("breakable"):
+			raycastReturn.crumble()
 		
 func _set_sprite(slide: Vector2) -> void:
-	if !available:
+	if braced:
+		$AnimatedSprite.play(BRACE)
 		return
-
-	if slide.x == 0:
-		$AnimatedSprite.play("idle")
-		print("Play Idle")
-	else:
-		$AnimatedSprite.play("walk")
-		print("Play Walk")
-		
-	if slide.y < 0:
-		$AnimatedSprite.play("jump")
-		print("Play Jump")
-	if slide.y > 0:
-		$AnimatedSprite.play("fall")
-		print("Play Fall")
 
 	if slide.x < 0:
 		$AnimatedSprite.flip_h = true
 	elif slide.x > 0:
 		$AnimatedSprite.flip_h = false
+
+	var anim = IDLE
+	if slide.x != 0:
+		anim = WALK
+	if slide.y < 0:
+		anim = JUMP
+	if slide.y > 0:
+		anim = FALL
+	if is_on_ladder and slide.y != 0:
+		anim = CLIMB
+	$AnimatedSprite.play(anim)
 
 func _shake_camera():
 	$Camera2DWithShake.shake(0.4, 15, 8)
@@ -83,7 +94,7 @@ func get_input():
 		velocity.x += run_speed
 	if left:
 		velocity.x -= run_speed
-	if jump && is_on_floor():
+	if jump && is_on_floor() && !is_on_ladder:
 		velocity.y = -jump_speed
 	if pound && not is_on_floor():
 		velocity.y = 2000
@@ -91,3 +102,8 @@ func get_input():
 		pounding = true
 	if climb && is_on_ladder:
 		velocity.y = -climb_speed
+
+func _on_AnimatedSprite_frame_changed() -> void:
+	if $AnimatedSprite.animation == "walk":
+		if $AnimatedSprite.frame == 0 || $AnimatedSprite.frame == 3:
+			$RandomSoundPlayer.play()

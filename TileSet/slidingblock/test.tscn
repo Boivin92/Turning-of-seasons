@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://TileSet/slidingblock/test.gd" type="Script" id=1]
 [ext_resource path="res://TileSet/slidingblock/tracksTileSet.tres" type="TileSet" id=2]
 [ext_resource path="res://TileSet/slidingblock/SlidingBlock.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TileSet/slidingblock/SlidingBlockLarge.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -15,10 +16,14 @@ format = 1
 tile_data = PoolIntArray( -262150, 6, 0, -262148, 0, 0, -262146, 4, 0, -131074, 1, 0, -8, 6, 0, -6, 0, 0, -4, 0, 0, -2, 14, 0, -65536, 0, 0, -65534, 0, 0, -65532, 7, 0, 131070, 1, 0, 262140, 6, 0, 262142, 3, 0 )
 
 [node name="SlidingBlock" parent="." instance=ExtResource( 3 )]
-position = Vector2( 64, 0 )
+position = Vector2( -64, 256 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="SlidingBlockLarge" parent="." instance=ExtResource( 4 )]
+position = Vector2( 256, 0 )
+rotation = 1.5708
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]

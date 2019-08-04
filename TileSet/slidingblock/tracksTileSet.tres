@@ -440,6 +440,12 @@ extents = Vector2( 16, 64 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": ExtResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 112, 112 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": ExtResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 112, 16 )
 }, {
 "autotile_coord": Vector2( 0, 0 ),
@@ -447,11 +453,5 @@ extents = Vector2( 16, 64 )
 "one_way_margin": 1.0,
 "shape": ExtResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 16, 16 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": ExtResource( 4 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 112, 112 )
 } ]
 14/z_index = 0

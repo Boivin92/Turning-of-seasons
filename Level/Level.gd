@@ -64,15 +64,15 @@ func _on_Objective_activated(season):
 				$ClimbingBlock1/CollisionShape2D.disabled = false
 				$ClimbingBlock1/ClimbingPart1/AnimatedSprite.play("Summer_Base")
 				$ClimbingBlock1/ClimbingPart2.visible = true
-				$ClimbingBlock1/ClimbingPart2/AnimatedSprite.play("Summer_Body")
+				$ClimbingBlock1/ClimbingPart2/AnimatedSprite.play("Summer_Body_A")
 				$ClimbingBlock1/ClimbingPart3.visible = true
-				$ClimbingBlock1/ClimbingPart3/AnimatedSprite.play("Summer_Head")
+				$ClimbingBlock1/ClimbingPart3/AnimatedSprite.play("Summer_Head_A")
 			Common.Season.Summer:
 				CurrentSeason =  Common.Season.Fall
 				$ClimbingBlock1/CollisionShape2D.disabled = true
-				$ClimbingBlock1/ClimbingPart1/AnimatedSprite.play("Fall_Base")
-				$ClimbingBlock1/ClimbingPart2/AnimatedSprite.play("Fall_Body")
-				$ClimbingBlock1/ClimbingPart3/AnimatedSprite.play("Fall_Head")
+				$ClimbingBlock1/ClimbingPart1/AnimatedSprite.play("Fall")
+				$ClimbingBlock1/ClimbingPart2.visible = false
+				$ClimbingBlock1/ClimbingPart3.visible = false
 			Common.Season.Fall:
 				CurrentSeason =  Common.Season.Winter
 				$ClimbingBlock1/CollisionShape2D.disabled = true
@@ -80,7 +80,8 @@ func _on_Objective_activated(season):
 				$ClimbingBlock1/ClimbingPart2.visible = false
 				$ClimbingBlock1/ClimbingPart3.visible = false
 			Common.Season.Winter:
-				CurrentSeason =  Common.Season.End
+				CurrentSeason =  Common.Season.Spring
+				$ClimbingBlock1/ClimbingPart1/AnimatedSprite.play("Spring")
 		$Tween.start()
 		music.PlayRotationSound()
 		$Player.brace_character()
@@ -89,7 +90,6 @@ func _on_Objective_activated(season):
 
 func _on_ClimbingBlock_body_entered(body):
 	if body.is_in_group("player"):
-		print(body)
 		body.is_on_ladder = true
 
 func _on_ClimbingBlock_body_exited(body):

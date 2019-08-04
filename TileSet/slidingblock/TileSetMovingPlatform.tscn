@@ -43,7 +43,6 @@ extents = Vector2( 16, 64 )
 [node name="TileSetMovingPlatform" type="Node2D"]
 
 [node name="LineHorizontal" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 1 )
 region_rect = Rect2( 0, 0, 128, 128 )
 __meta__ = {
@@ -53,7 +52,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="LineHorizontal"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="Top" type="CollisionShape2D" parent="LineHorizontal/StaticBody2D"]
 position = Vector2( 0, -48 )
@@ -64,7 +63,6 @@ position = Vector2( 0, 48 )
 shape = SubResource( 2 )
 
 [node name="LineVertical" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 2 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -74,7 +72,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="LineVertical"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LineVertical/StaticBody2D"]
 position = Vector2( -48, 0 )
@@ -85,7 +83,6 @@ position = Vector2( 48, 0 )
 shape = SubResource( 4 )
 
 [node name="TopToRight" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 3 )
 region_rect = Rect2( 256, 0, 128, 128 )
 __meta__ = {
@@ -95,7 +92,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="TopToRight"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopToRight/StaticBody2D"]
 position = Vector2( 48, -48 )
@@ -110,7 +107,6 @@ position = Vector2( -48, 0 )
 shape = SubResource( 7 )
 
 [node name="TopToLeft" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 4 )
 region_rect = Rect2( 768, 0, 128, 128 )
 __meta__ = {
@@ -120,7 +116,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="TopToLeft"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopToLeft/StaticBody2D"]
 position = Vector2( 0, 48 )
@@ -135,7 +131,6 @@ position = Vector2( -48, -48 )
 shape = ExtResource( 7 )
 
 [node name="BottomToLeft" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 8 )
 region_rect = Rect2( 1280, 0, 128, 128 )
 __meta__ = {
@@ -145,7 +140,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="BottomToLeft"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomToLeft/StaticBody2D"]
 position = Vector2( -48, 48 )
@@ -160,7 +155,6 @@ position = Vector2( 0, -48 )
 shape = ExtResource( 5 )
 
 [node name="BottomToRight" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 9 )
 region_rect = Rect2( 1792, 0, 128, 128 )
 __meta__ = {
@@ -170,7 +164,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="BottomToRight"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomToRight/StaticBody2D"]
 position = Vector2( 48, 48 )
@@ -185,7 +179,6 @@ position = Vector2( 0, -48 )
 shape = ExtResource( 5 )
 
 [node name="RightToStop" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 10 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -195,7 +188,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="RightToStop"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightToStop/StaticBody2D"]
 position = Vector2( 0, -48 )
@@ -210,7 +203,6 @@ position = Vector2( -48, 0 )
 shape = ExtResource( 6 )
 
 [node name="LeftToStop" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 11 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -220,7 +212,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="LeftToStop"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftToStop/StaticBody2D"]
 position = Vector2( 48, 0 )
@@ -235,7 +227,6 @@ position = Vector2( 0, -48 )
 shape = ExtResource( 5 )
 
 [node name="TopToStop" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 12 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -245,7 +236,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="TopToStop"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopToStop/StaticBody2D"]
 position = Vector2( -48, 0 )
@@ -260,7 +251,6 @@ position = Vector2( 0, 48 )
 shape = ExtResource( 5 )
 
 [node name="BottomToStop" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 13 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -270,7 +260,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="BottomToStop"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomToStop/StaticBody2D"]
 position = Vector2( 0, -48 )
@@ -285,7 +275,6 @@ position = Vector2( -48, 0 )
 shape = ExtResource( 6 )
 
 [node name="BottomToSplit" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 14 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -295,7 +284,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="BottomToSplit"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomToSplit/StaticBody2D"]
 position = Vector2( 0, -48 )
@@ -310,7 +299,6 @@ position = Vector2( -48, 48 )
 shape = ExtResource( 7 )
 
 [node name="LeftToSplit" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 15 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -320,7 +308,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="LeftToSplit"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftToSplit/StaticBody2D"]
 position = Vector2( -48, -48 )
@@ -335,7 +323,6 @@ position = Vector2( -48, 48 )
 shape = ExtResource( 7 )
 
 [node name="RightToSplit" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 16 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -345,7 +332,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="RightToSplit"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightToSplit/StaticBody2D"]
 position = Vector2( 48, -48 )
@@ -360,7 +347,6 @@ position = Vector2( -48, 0 )
 shape = ExtResource( 6 )
 
 [node name="TopToSplit" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 17 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -370,7 +356,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="TopToSplit"]
 editor/display_folded = true
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopToSplit/StaticBody2D"]
 position = Vector2( 0, 48 )
@@ -385,7 +371,6 @@ position = Vector2( -48, -48 )
 shape = ExtResource( 7 )
 
 [node name="CrossCenter" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 18 )
 region_rect = Rect2( 2048, 0, 128, 128 )
 __meta__ = {
@@ -394,7 +379,7 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="CrossCenter"]
 collision_layer = 8
-collision_mask = 2
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CrossCenter/StaticBody2D"]
 position = Vector2( -48, 48 )
