@@ -129,7 +129,6 @@ type = 2
 position = Vector2( 320.926, 446.966 )
 rotation = 1.5708
 type = 3
-
 [connection signal="body_entered" from="ClimbingBlock1" to="." method="_on_ClimbingBlock_body_entered"]
 [connection signal="body_exited" from="ClimbingBlock1" to="." method="_on_ClimbingBlock_body_exited"]
 [connection signal="stomped" from="Player" to="." method="_on_Player_stomped"]

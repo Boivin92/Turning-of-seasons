@@ -91,3 +91,9 @@ func get_input():
 		pounding = true
 	if climb && is_on_ladder:
 		velocity.y = -climb_speed
+
+
+func _on_AnimatedSprite_frame_changed() -> void:
+	if $AnimatedSprite.animation == "walk":
+		if $AnimatedSprite.frame == 0 || $AnimatedSprite.frame == 3:
+			$RandomSoundPlayer.play()
