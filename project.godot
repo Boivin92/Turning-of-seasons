@@ -32,6 +32,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
+parralax="*res://Level/parralax.tscn"
 music="*res://music/music.tscn"
 WinterSnow="*res://Level/WinterSnow.tscn"
 SeasonChanger="*res://Level/SeasonChanger.tscn"
