@@ -9,10 +9,11 @@
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 format = 1
-tile_data = PoolIntArray( 524280, 38, 0, 524282, 38, 0, 524284, 38, 0, 524286, 38, 0, 458752, 38, 0, 458754, 38, 0, 458756, 38, 0 )
+tile_data = PoolIntArray( -983034, 38, 0, -851962, 38, 0, -720890, 38, 0, -589818, 38, 0, -458746, 38, 0, -327674, 38, 0, -196602, 38, 0, -65530, 38, 0, 65542, 38, 0, 196614, 38, 0, 327686, 38, 0, 524280, 38, 0, 524282, 38, 0, 524284, 38, 0, 524286, 38, 0, 458752, 38, 0, 458754, 38, 0, 458756, 38, 0, 458758, 38, 0 )
 
 [node name="Shroom" parent="." instance=ExtResource( 2 )]
 position = Vector2( 246.066, 419.454 )
+BouncyPower = 1900
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( -226.64, 319.454 )

@@ -38,7 +38,7 @@ func _physics_process(delta):
 	if not braced:
 		get_input()
 	
-	velocity.y = clamp(velocity.y, -2000, 2000)
+	velocity.y = clamp(velocity.y, -3000, 3000)
 	var airborne = not is_on_floor()
 	
 	var slide = move_and_slide(velocity, Vector2(0, -1), false, 4, 0.523599)
