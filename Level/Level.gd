@@ -77,7 +77,8 @@ func _on_Objective_activated(season):
 				$ClimbingBlock1/ClimbingPart2.visible = false
 				$ClimbingBlock1/ClimbingPart3.visible = false
 			Common.Season.Winter:
-				CurrentSeason =  Common.Season.End
+				CurrentSeason =  Common.Season.Spring
+				$ClimbingBlock1/ClimbingPart1/AnimatedSprite.play("Spring")
 		$Tween.start()
 		music.PlayRotationSound()
 		$Player.brace_character()
@@ -86,7 +87,6 @@ func _on_Objective_activated(season):
 
 func _on_ClimbingBlock_body_entered(body):
 	if body.is_in_group("player"):
-		print(body)
 		body.is_on_ladder = true
 
 func _on_ClimbingBlock_body_exited(body):

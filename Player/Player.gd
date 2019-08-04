@@ -37,31 +37,36 @@ func _physics_process(delta):
 	
 	var slide = move_and_slide(velocity, Vector2(0, -1), false, 4, 0.523599)
 	_set_sprite(slide)
+	
 	if airborne && is_on_floor() && velocity.y > 50:
 		_shake_camera()
 		
 	if pounding && is_on_floor():
 		pounding = false
 		
-		
 func _set_sprite(slide: Vector2) -> void:
 	if !available:
 		return
-
-	if slide.x == 0:
+		
+	if slide.x == 0 && is_on_floor():
 		$AnimatedSprite.play("idle")
 		print("Play Idle")
-	else:
+	elif is_on_floor() && !is_on_ladder:
 		$AnimatedSprite.play("walk")
 		print("Play Walk")
-		
-	if slide.y < 0:
+	elif is_on_ladder && Input.is_action_pressed("climb"):
+		$AnimatedSprite.play("climb")
+		print("Play Climb")
+	elif slide.y < 0:
 		$AnimatedSprite.play("jump")
 		print("Play Jump")
-	if slide.y > 0:
+	elif slide.y > 0:
 		$AnimatedSprite.play("fall")
 		print("Play Fall")
-
+	elif is_on_ladder: 
+		$AnimatedSprite.play("idle")
+		print("Play Idle")
+		
 	if slide.x < 0:
 		$AnimatedSprite.flip_h = true
 	elif slide.x > 0:

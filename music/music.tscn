@@ -25,4 +25,5 @@ stream = ExtResource( 3 )
 
 [node name="RotationSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = 10.0
 [connection signal="toggled" from="TextureButton" to="." method="_on_TextureButton_toggled"]
