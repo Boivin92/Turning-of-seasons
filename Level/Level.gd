@@ -6,10 +6,13 @@ export (int) var RotationOnAdvance : int = 90
 export (PackedScene) var NextLevel
 export (Common.Season) var CurrentSeason
 
+var NbOfTurn : int
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_prepare_tween()
 	CurrentSeason = Common.Season.Spring
+	NbOfTurn = 0
 
 func remap_tileset():
 	for x in range(-10, 10):
@@ -61,12 +64,13 @@ func _on_Objective_activated(season):
 		match season :
 			Common.Season.Spring:
 				CurrentSeason =  Common.Season.Summer
+				$ObjectiveWinter.reset_objective()
 				$ClimbingBlock1/CollisionShape2D.disabled = false
 				$ClimbingBlock1/ClimbingPart1/AnimatedSprite.play("Summer_Base")
 				$ClimbingBlock1/ClimbingPart2.visible = true
 				$ClimbingBlock1/ClimbingPart2/AnimatedSprite.play("Summer_Body_A")
 				$ClimbingBlock1/ClimbingPart3.visible = true
-				$ClimbingBlock1/ClimbingPart3/AnimatedSprite.play("Summer_Head_A")
+				$ClimbingBlock1/ClimbingPart3/AnimatedSprite.play("Summer_Head_B")
 			Common.Season.Summer:
 				CurrentSeason =  Common.Season.Fall
 				$ClimbingBlock1/CollisionShape2D.disabled = true
@@ -80,13 +84,26 @@ func _on_Objective_activated(season):
 				$ClimbingBlock1/ClimbingPart2.visible = false
 				$ClimbingBlock1/ClimbingPart3.visible = false
 			Common.Season.Winter:
-				CurrentSeason =  Common.Season.Spring
-				$ClimbingBlock1/ClimbingPart1/AnimatedSprite.play("Spring")
-		$Tween.start()
-		music.PlayRotationSound()
-		$Player.brace_character()
-		_activate_particles(true)
-		remap_tileset()
+				NbOfTurn += 1
+				if NbOfTurn == 2 :
+					CurrentSeason = Common.Season.End
+				else :
+					CurrentSeason =  Common.Season.Spring
+					$ClimbingBlock1/ClimbingPart1/AnimatedSprite.play("Spring")
+					$ObjectiveSpring.reset_objective()
+					$ObjectiveSummer.reset_objective()
+					$ObjectiveFall.reset_objective()
+		
+		if NbOfTurn == 2 :
+			$Player.brace_character()
+			music.StopGraduallyMusic()
+			music.PlayEndingSound()
+		else :
+			$Tween.start()
+			music.PlayRotationSound()
+			$Player.brace_character()
+			_activate_particles(true)
+			remap_tileset()
 
 func _on_ClimbingBlock_body_entered(body):
 	if body.is_in_group("player"):

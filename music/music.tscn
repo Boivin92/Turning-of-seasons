@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://music/music.gd" type="Script" id=1]
 [ext_resource path="res://music/music_calm_green_lake_serenade.wav" type="AudioStream" id=2]
 [ext_resource path="res://Level/metal_small_gear_lever_winding_03.wav" type="AudioStream" id=3]
 [ext_resource path="res://Level/cinematic_deep_bass_pass_whoosh_03.wav" type="AudioStream" id=4]
+[ext_resource path="res://music/cinematic_LowDrone1.wav" type="AudioStream" id=5]
 
 [node name="Control" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -26,4 +27,10 @@ stream = ExtResource( 3 )
 [node name="RotationSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 volume_db = 10.0
+
+[node name="EndingSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = 20.0
+
+[node name="Tween" type="Tween" parent="."]
 [connection signal="toggled" from="TextureButton" to="." method="_on_TextureButton_toggled"]
