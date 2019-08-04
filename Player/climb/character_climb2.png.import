@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloc_roche_1.png-98974696ea52103835b7c72fa63f7dd9.stex"
+path="res://.import/character_climb2.png-484c3581b28126b6b72742c70c19f698.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ClimbingBlock/bloc_roche_1.png"
-dest_files=[ "res://.import/bloc_roche_1.png-98974696ea52103835b7c72fa63f7dd9.stex" ]
+source_file="res://Player/climb/character_climb2.png"
+dest_files=[ "res://.import/character_climb2.png-484c3581b28126b6b72742c70c19f698.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloc_border.png-0d5414da6dc7c29911a36933ee1117ea.stex"
+path="res://.import/vine_top_2.png-31b752d5f6b6e048f911b9cd8bdc166a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ClimbingBlock/bloc_border.png"
-dest_files=[ "res://.import/bloc_border.png-0d5414da6dc7c29911a36933ee1117ea.stex" ]
+source_file="res://ClimbingBlock/summer/vine_top_2.png"
+dest_files=[ "res://.import/vine_top_2.png-31b752d5f6b6e048f911b9cd8bdc166a.stex" ]
 
 [params]
 
