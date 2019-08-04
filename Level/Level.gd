@@ -14,14 +14,16 @@ func _ready():
 	CurrentSeason = Common.Season.Spring
 	NbOfTurn = 0
 
+const FIXED = 17
+const ROW = 31
 func remap_tileset():
 	for x in range(-10, 10):
 		for y in range(-10, 10):
 			var cell = $TileMap.get_cell(x, y)
-			if cell > 16:
-				cell += 17
-				if cell > 84:
-					cell -= 68
+			if cell >= FIXED:
+				cell += ROW
+				if cell >= FIXED + 4*ROW:
+					cell -= 4*ROW
 				$TileMap.set_cell(x, y, cell)
 
 func _process(delta):
