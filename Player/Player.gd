@@ -6,7 +6,6 @@ export (int) var run_speed : int
 export (int) var jump_speed : int
 export (int) var climb_speed : int
 
-var pounding : bool
 var braced : bool = false
 var is_on_ladder = false
 var interact : bool = false
@@ -36,7 +35,7 @@ func _physics_process(delta):
 	elif !is_on_ladder:
 		velocity.y += gravity * delta
 	
-	if not pounding && not braced:
+	if not braced:
 		get_input()
 	
 	velocity.y = clamp(velocity.y, -2000, 2000)
@@ -49,9 +48,6 @@ func _physics_process(delta):
 	
 	if airborne && is_on_floor() && velocity.y > 50:
 		_shake_camera()
-		
-	if pounding && is_on_floor():
-		pounding = false
 		
 	var raycastReturn = $RayCast2D.get_collider()
 	if raycastReturn != null:
@@ -83,8 +79,7 @@ func _set_sprite(slide: Vector2) -> void:
 
 func bounce(bouncyPower : int):
 	if not is_on_floor() && velocity.y > 0:
-		pass
-	pass
+		velocity.y = -bouncyPower
 
 func _shake_camera():
 	$Camera2DWithShake.shake(0.4, 15, 8)
@@ -94,7 +89,6 @@ func get_input():
 	var right = Input.is_action_pressed("right")
 	var left = Input.is_action_pressed("left")
 	var jump = Input.is_action_pressed("jump")
-	var pound = Input.is_action_pressed("pound")
 	var climb = Input.is_action_pressed("climb")
 	interact = Input.is_action_pressed("interact")
 	
@@ -105,10 +99,6 @@ func get_input():
 		velocity.x -= run_speed
 	if jump && is_on_floor() && !is_on_ladder:
 		velocity.y = -jump_speed
-	if pound && not is_on_floor():
-		velocity.y = 2000
-		velocity.x = 0
-		pounding = true
 	if climb && is_on_ladder:
 		velocity.y = -climb_speed
 
