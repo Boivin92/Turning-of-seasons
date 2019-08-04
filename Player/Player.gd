@@ -43,11 +43,6 @@ func _physics_process(delta):
 		
 	if pounding && is_on_floor():
 		pounding = false
-	
-	var raycastReturn = $RayCast2D.get_collider()
-	if raycastReturn != null:
-		if raycastReturn.is_in_group("breakable"):
-			raycastReturn.crumble()
 		
 func _set_sprite(slide: Vector2) -> void:
 	if !available:
