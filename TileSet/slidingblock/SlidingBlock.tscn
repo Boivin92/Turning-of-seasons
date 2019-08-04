@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://TileSet/tilesheet.png" type="Texture" id=1]
+[ext_resource path="res://TileSet/slidingblock/sprites/bloc_MOVE_BOLT.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24, 24 )
@@ -9,8 +9,8 @@ extents = Vector2( 24, 24 )
 extents = Vector2( 64, 64 )
 
 [node name="SlidingBlock" type="RigidBody2D"]
-collision_layer = 2
-collision_mask = 8
+collision_layer = 16
+collision_mask = 24
 mode = 2
 
 [node name="Slider" type="CollisionShape2D" parent="."]
@@ -18,11 +18,11 @@ shape = SubResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 2
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="StaticBody2D"]
 texture = ExtResource( 1 )
-region_enabled = true
 region_rect = Rect2( 2048, 0, 128, 128 )
