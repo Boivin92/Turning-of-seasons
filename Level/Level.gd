@@ -15,8 +15,11 @@ func remap_tileset():
 	for x in range(-10, 10):
 		for y in range(-10, 10):
 			var cell = $TileMap.get_cell(x, y)
-			if (cell > 16):
-				$TileMap.set_cell(x, y, cell + 17)
+			if cell > 16:
+				cell += 17
+				if cell > 84:
+					cell -= 68
+				$TileMap.set_cell(x, y, cell)
 
 func _process(delta):
 	pass
