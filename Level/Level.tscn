@@ -1,20 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Level/Level.gd" type="Script" id=1]
 [ext_resource path="res://Level/tileset_seasons.tres" type="TileSet" id=2]
-[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Objective/Objective.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ClimbingBlock/ClimbingBlock.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Objective/Objective.tscn" type="PackedScene" id=5]
 
-[sub_resource type="ParticlesMaterial" id=1]
-emission_shape = 2
-emission_box_extents = Vector3( 800, 50, 1 )
-flag_disable_z = true
-gravity = Vector3( 0, 150, 0 )
-angular_velocity = -41.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale = 4.0
-color = Color( 0.619608, 0.372549, 0.243137, 1 )
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 192, 64 )
 
 [sub_resource type="ParticlesMaterial" id=2]
 emission_shape = 2
@@ -28,6 +21,17 @@ scale = 4.0
 color = Color( 0.619608, 0.372549, 0.243137, 1 )
 
 [sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 800, 50, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 150, 0 )
+angular_velocity = -41.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 4.0
+color = Color( 0.619608, 0.372549, 0.243137, 1 )
+
+[sub_resource type="ParticlesMaterial" id=4]
 emission_shape = 2
 emission_box_extents = Vector3( 50, 800, 1 )
 flag_disable_z = true
@@ -47,7 +51,28 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( -524297, 12, 0, -524296, 11, 0, -524295, 9, 0, -524294, 10, 0, -524293, 9, 0, -524292, 10, 0, -524291, 9, 0, -524290, 24, 0, -524289, 23, 0, -589824, 22, 0, -589823, 21, 0, -589822, 10, 0, -589821, 9, 0, -589820, 10, 0, -589819, 9, 0, -589818, 10, 0, -589817, 9, 0, -589816, 8, 0, -458761, 13, 0, -524286, 33, 0, -524280, 7, 0, -393225, 14, 0, -393220, 33, 0, -458744, 5, 0, -327689, 13, 0, -327682, 33, 0, -327681, 33, 0, -393212, 33, 0, -393208, 6, 0, -262153, 14, 0, -262152, 33, 0, -262151, 33, 0, -262150, 33, 0, -262145, 33, 0, -327672, 5, 0, -196617, 13, 0, -196609, 33, 0, -262136, 6, 0, -131081, 14, 0, -131080, 33, 0, -196603, 33, 0, -196600, 5, 0, -65545, 25, 0, -65541, 33, 0, -65540, 33, 0, -65539, 33, 0, -65538, 33, 0, -131067, 33, 0, -131065, 33, 0, -131064, 32, 0, -9, 26, 0, -1, 33, 0, -65528, 31, 0, 65527, 27, 0, 65528, 33, 0, 65535, 33, 0, 7, 33, 0, 8, 30, 0, 131063, 28, 0, 131065, 33, 0, 131066, 33, 0, 131070, 33, 0, 65544, 29, 0, 196599, 13, 0, 196606, 33, 0, 131073, 33, 0, 131080, 6, 0, 262135, 14, 0, 262139, 33, 0, 196609, 33, 0, 196616, 5, 0, 327671, 13, 0, 327672, 33, 0, 327673, 33, 0, 327674, 33, 0, 327677, 33, 0, 262152, 6, 0, 393207, 14, 0, 393208, 33, 0, 327687, 33, 0, 327688, 5, 0, 458743, 13, 0, 393222, 33, 0, 393223, 33, 0, 393224, 6, 0, 524279, 15, 0, 458757, 33, 0, 458758, 33, 0, 458759, 33, 0, 458760, 5, 0, 589815, 0, 0, 589816, 1, 0, 589817, 2, 0, 589818, 1, 0, 589819, 2, 0, 589820, 1, 0, 589821, 2, 0, 589822, 17, 0, 589823, 18, 0, 524288, 19, 0, 524289, 20, 0, 524290, 1, 0, 524291, 2, 0, 524292, 1, 0, 524293, 2, 0, 524294, 1, 0, 524295, 3, 0, 524296, 4, 0 )
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
+[node name="ClimbingBlock1" type="Area2D" parent="."]
+editor/display_folded = true
+position = Vector2( 832, -576 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ClimbingPart1" parent="ClimbingBlock1" instance=ExtResource( 3 )]
+position = Vector2( 128, 0 )
+
+[node name="ClimbingPart2" parent="ClimbingBlock1" instance=ExtResource( 3 )]
+visible = false
+
+[node name="ClimbingPart3" parent="ClimbingBlock1" instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -128, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClimbingBlock1"]
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -956.858, 903.927 )
 jump_speed = 810
 
@@ -61,56 +86,55 @@ position = Vector2( -0.343262, -1086.93 )
 emitting = false
 amount = 500
 lifetime = 5.0
-process_material = SubResource( 1 )
+process_material = SubResource( 2 )
 
 [node name="ParticlesBottom" type="Particles2D" parent="particles"]
 position = Vector2( -0.704712, 1087.89 )
 emitting = false
 amount = 500
 lifetime = 5.0
-process_material = SubResource( 2 )
+process_material = SubResource( 3 )
 
 [node name="ParticlesLeft" type="Particles2D" parent="particles"]
 position = Vector2( -1088.34, 1.35193 )
 emitting = false
 amount = 500
 lifetime = 5.0
-process_material = SubResource( 3 )
+process_material = SubResource( 4 )
 
 [node name="ParticlesRight" type="Particles2D" parent="particles"]
 position = Vector2( 1089.27, 1.40375 )
 emitting = false
 amount = 500
 lifetime = 5.0
-process_material = SubResource( 3 )
+process_material = SubResource( 4 )
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
 
-[node name="ObjectiveSpring" parent="." instance=ExtResource( 4 )]
-position = Vector2( -320, 960 )
+[node name="ObjectiveSpring" parent="." instance=ExtResource( 5 )]
+position = Vector2( 961.239, 577.555 )
 
-[node name="ObjectiveSummer" parent="." instance=ExtResource( 4 )]
-position = Vector2( 960, 448 )
+[node name="ObjectiveSummer" parent="." instance=ExtResource( 5 )]
+position = Vector2( 193.601, -956.83 )
 rotation = -1.5708
 type = 1
 
-[node name="ObjectiveFall" parent="." instance=ExtResource( 4 )]
-position = Vector2( -64, -320 )
+[node name="ObjectiveFall" parent="." instance=ExtResource( 5 )]
+position = Vector2( -190.652, -63.7223 )
 rotation = 3.14159
 type = 2
 
-[node name="ObjectiveWinter" parent="." instance=ExtResource( 4 )]
-position = Vector2( -832, -320 )
+[node name="ObjectiveWinter" parent="." instance=ExtResource( 5 )]
+position = Vector2( 320.926, 446.966 )
 rotation = 1.5708
 type = 3
-
 [connection signal="body_entered" from="ClimbingBlock1" to="." method="_on_ClimbingBlock_body_entered"]
 [connection signal="body_exited" from="ClimbingBlock1" to="." method="_on_ClimbingBlock_body_exited"]
 [connection signal="stomped" from="Player" to="." method="_on_Player_stomped"]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
-[connection signal="body_entered" from="ObjectiveSpring" to="." method="_on_ObjectiveSpring_body_entered"]
-[connection signal="body_entered" from="ObjectiveSummer" to="." method="_on_ObjectiveSummer_body_entered"]
-[connection signal="body_entered" from="ObjectiveFall" to="." method="_on_ObjectiveFall_body_entered"]
-[connection signal="body_entered" from="ObjectiveWinter" to="." method="_on_ObjectiveWinter_body_entered"]
+[connection signal="activated" from="ObjectiveSpring" to="." method="_on_Objective_activated"]
+[connection signal="activated" from="ObjectiveSummer" to="." method="_on_Objective_activated"]
+[connection signal="activated" from="ObjectiveFall" to="." method="_on_Objective_activated"]
+[connection signal="activated" from="ObjectiveWinter" to="." method="_on_Objective_activated"]
