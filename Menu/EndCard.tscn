@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Menu/MainMenu/titelscreen.png" type="Texture" id=1]
+[ext_resource path="res://Fonts/VIKING-N.TTF" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 0.384314 )
+font_data = ExtResource( 2 )
+
+[node name="EndCard" type="Sprite"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 360.716
+margin_top = 490.151
+margin_right = 658.716
+margin_bottom = 698.151
+custom_fonts/mono_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.894118, 0.937255, 0.113725, 1 )
+bbcode_enabled = true
+bbcode_text = "Thank you for playing!
+
+Artists:
+[indent]Ariane Simard-Leduc
+Olivier Boily
+Marie-Pier Bergeron[/indent]
+
+Code monkeys:
+[indent]Cédric Pinard
+François Boivin
+Michael Blanchet[/indent]"
+text = "Thank you for playing!
+
+Artists:
+	Ariane Simard-Leduc
+Olivier Boily
+Marie-Pier Bergeron
+
+Code monkeys:
+	Cédric Pinard
+François Boivin
+Michael Blanchet"
