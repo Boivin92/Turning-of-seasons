@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/idle/character_idel1.png" type="Texture" id=2]
@@ -7,26 +7,29 @@
 [ext_resource path="res://Player/idle/character_idel3.png" type="Texture" id=5]
 [ext_resource path="res://Player/idle/character_idel3_b.png" type="Texture" id=6]
 [ext_resource path="res://Player/idle/character_idel4.png" type="Texture" id=7]
-[ext_resource path="res://Player/Walk/character_walk1.png" type="Texture" id=8]
-[ext_resource path="res://Player/Walk/character_walk2.png" type="Texture" id=9]
-[ext_resource path="res://Player/Walk/character_walk3.png" type="Texture" id=10]
-[ext_resource path="res://Player/Walk/character_walk4.png" type="Texture" id=11]
-[ext_resource path="res://Player/Walk/character_walk5.png" type="Texture" id=12]
-[ext_resource path="res://Player/Walk/character_walk6.png" type="Texture" id=13]
-[ext_resource path="res://Player/jump/character_jump4.png" type="Texture" id=14]
-[ext_resource path="res://Player/jump/character_fall1.png" type="Texture" id=15]
-[ext_resource path="res://Player/jump/character_jump5.png" type="Texture" id=16]
-[ext_resource path="res://Player/woddy_le_golem_base.png" type="Texture" id=17]
-[ext_resource path="res://Player/fall/character_fall2.png" type="Texture" id=18]
-[ext_resource path="res://Camera2DWithShake.gd" type="Script" id=19]
-[ext_resource path="res://music/RandomSoundPlayer.tscn" type="PackedScene" id=20]
-[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_01.wav" type="AudioStream" id=21]
-[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_02.wav" type="AudioStream" id=22]
-[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_03.wav" type="AudioStream" id=23]
-[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_04.wav" type="AudioStream" id=24]
-[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_05.wav" type="AudioStream" id=25]
-[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_06.wav" type="AudioStream" id=26]
-[ext_resource path="res://RandomSoundPlayer.gd" type="Script" id=27]
+[ext_resource path="res://Player/jump/character_jump6.png" type="Texture" id=8]
+[ext_resource path="res://Player/fall/character_fall2.png" type="Texture" id=9]
+[ext_resource path="res://Player/Walk/character_walk1.png" type="Texture" id=10]
+[ext_resource path="res://Player/Walk/character_walk2.png" type="Texture" id=11]
+[ext_resource path="res://Player/Walk/character_walk3.png" type="Texture" id=12]
+[ext_resource path="res://Player/Walk/character_walk4.png" type="Texture" id=13]
+[ext_resource path="res://Player/Walk/character_walk5.png" type="Texture" id=14]
+[ext_resource path="res://Player/Walk/character_walk6.png" type="Texture" id=15]
+[ext_resource path="res://Player/climb/character_climb1.png" type="Texture" id=16]
+[ext_resource path="res://Player/climb/character_climb2.png" type="Texture" id=17]
+[ext_resource path="res://Player/jump/character_jump1.png" type="Texture" id=18]
+[ext_resource path="res://Player/jump/character_jump2.png" type="Texture" id=19]
+[ext_resource path="res://Player/jump/character_jump3.png" type="Texture" id=20]
+[ext_resource path="res://Player/jump/character_jump4.png" type="Texture" id=21]
+[ext_resource path="res://Player/jump/character_jump5.png" type="Texture" id=22]
+[ext_resource path="res://Camera2DWithShake.gd" type="Script" id=23]
+[ext_resource path="res://music/RandomSoundPlayer.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_01.wav" type="AudioStream" id=25]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_02.wav" type="AudioStream" id=26]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_03.wav" type="AudioStream" id=27]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_04.wav" type="AudioStream" id=28]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_05.wav" type="AudioStream" id=29]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_06.wav" type="AudioStream" id=30]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -35,30 +38,30 @@ animations = [ {
 "name": "idle",
 "speed": 4.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "fall",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "walk",
 "speed": 7.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "climb",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": false,
+"name": "jump",
+"speed": 5.0
 }, {
 "frames": [  ],
 "loop": true,
 "name": "brace",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 14 ) ],
-"loop": false,
-"name": "jump",
-"speed": 6.0
-}, {
-"frames": [ ExtResource( 17 ) ],
-"loop": true,
-"name": "climb",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 18 ) ],
-"loop": true,
-"name": "fall",
-"speed": 3.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -79,7 +82,8 @@ climb_speed = 150
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "climb"
+animation = "jump"
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -87,13 +91,14 @@ shape = SubResource( 2 )
 
 [node name="Camera2DWithShake" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 4, 4 )
-script = ExtResource( 19 )
+zoom = Vector2( 2, 2 )
+script = ExtResource( 23 )
 
-[node name="RandomSoundPlayer" parent="." instance=ExtResource( 20 )]
-sounds = [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ]
+[node name="RandomSoundPlayer" parent="." instance=ExtResource( 24 )]
+sounds = [ ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ]
 
-[node name="RandomSoundPlayer2" type="Node" parent="."]
-script = ExtResource( 27 )
-sounds = [  ]
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 0, 100 )
+collision_mask = 2
+
 [connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]

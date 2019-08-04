@@ -19,6 +19,11 @@ func get_animation_name() -> String:
 		_:
 			return ""
 
+func reset_objective() -> void:
+	activated = false
+	$AnimatedSprite.stop()
+	$AnimatedSprite.frame = 0
+
 func _ready() -> void:
 	$AnimatedSprite.set_animation(get_animation_name())
 
