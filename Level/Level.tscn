@@ -1,12 +1,14 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Level/Level.gd" type="Script" id=1]
 [ext_resource path="res://Level/tileset_seasons.tres" type="TileSet" id=2]
 [ext_resource path="res://TileSet/slidingblock/tracksTileSet.tres" type="TileSet" id=3]
 [ext_resource path="res://TileSet/slidingblock/SlidingBlockLarge.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Objective/Objective.tscn" type="PackedScene" id=6]
-[ext_resource path="res://ClimbingBlock/ClimbingBlock.tscn" type="PackedScene" id=7]
+[ext_resource path="res://shroom/Shroom.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Objective/Objective.tscn" type="PackedScene" id=7]
+[ext_resource path="res://TileSet/breakingBlock/BreakingBlock.tscn" type="PackedScene" id=8]
+[ext_resource path="res://ClimbingBlock/ClimbingBlock.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ParticlesMaterial" id=1]
 emission_shape = 2
@@ -38,8 +40,29 @@ orbit_velocity_random = 0.0
 scale = 4.0
 color = Color( 0.619608, 0.372549, 0.243137, 1 )
 
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 192, 64 )
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 64, 192 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 64, 192 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 64, 192 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 64, 256 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 64, 512 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 64, 640 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 64, 768 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 64, 1536 )
 
 [node name="Level" type="Node2D"]
 position = Vector2( 3841.24, 4032 )
@@ -54,9 +77,11 @@ tile_data = PoolIntArray( -2097185, 12, 0, -2162656, 8, 0, -2031648, 55, 0, -203
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 128, 128 )
+format = 1
 tile_data = PoolIntArray( -1638394, 5, 0, -1638393, 7, 0, -1572858, 1, 0, -1572856, 9, 0, -1507322, 2, 0, -1507321, 0, 0, -1507320, 3, 0, -786425, 5, 0, -786424, 0, 0, -786423, 0, 0, -786422, 0, 0, -786421, 0, 0, -786420, 0, 0, -786419, 0, 0, -786418, 7, 0, -720889, 1, 0, -655353, 8, 0, -262136, 6, 0, -262135, 0, 0, -262134, 0, 0, -262133, 0, 0, -262132, 7, 0, -262125, 9, 0, -196589, 1, 0, -131053, 1, 0, -65517, 8, 0, 196614, 5, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 7, 0, 262150, 1, 0, 327686, 1, 0, 393222, 1, 0, 458758, 1, 0, 524294, 1, 0, 589830, 8, 0, 1179638, 5, 0, 1179639, 0, 0, 1179640, 0, 0, 1179641, 0, 0, 1179642, 7, 0, 1245174, 8, 0 )
 
 [node name="SlidingBlocks" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="SlidingBlockLarge" parent="SlidingBlocks" instance=ExtResource( 4 )]
 position = Vector2( 5696, 2560 )
@@ -79,8 +104,116 @@ rotation = 1.5708
 position = Vector2( 5440, 4480 )
 rotation = 1.5708
 
-[node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1086.76, 512 )
+[node name="Shrooms" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="Shroom" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 3136, 5632 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom2" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 4288, 6272 )
+rotation = 3.14159
+BouncyPower = 1600
+
+[node name="Shroom3" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 4032, 6784 )
+rotation = 3.14159
+BouncyPower = 1400
+
+[node name="Shroom4" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 4802, 6912 )
+rotation = 3.14159
+BouncyPower = 1400
+
+[node name="Shroom5" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 5568, 7040 )
+rotation = 3.14159
+BouncyPower = 1400
+
+[node name="Shroom6" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 7360, 5888 )
+rotation = 3.14159
+BouncyPower = 1600
+
+[node name="Shroom7" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 7104, 5248 )
+rotation = 3.14159
+BouncyPower = 1600
+
+[node name="Shroom8" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 7360, 4608 )
+rotation = 3.14159
+BouncyPower = 1600
+
+[node name="Shroom9" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 7104, 3968 )
+rotation = 3.14159
+BouncyPower = 1600
+
+[node name="Shroom10" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 6848, 3456 )
+rotation = 3.14159
+BouncyPower = 1400
+
+[node name="Shroom11" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 4032, 3712 )
+rotation = 3.14159
+BouncyPower = 1600
+
+[node name="Shroom12" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 2752, 3968 )
+rotation = 3.14159
+BouncyPower = 2300
+
+[node name="Shroom13" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 2112, 3328 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom14" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 1472, 2688 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom15" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 3520, 2816 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom16" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 4032, 1792 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom17" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 2368, 1664 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom18" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 1089, 128 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom19" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 2752, 640 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom20" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 5312, 640 )
+rotation = 3.14159
+BouncyPower = 1900
+
+[node name="Shroom21" parent="Shrooms" instance=ExtResource( 5 )]
+position = Vector2( 4544, 2944 )
+rotation = 3.14159
+BouncyPower = 1600
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( -3393.24, 1920 )
 jump_speed = 810
 climb_speed = 170
 
@@ -124,47 +257,562 @@ process_material = SubResource( 3 )
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
 
-[node name="ObjectiveSpring" parent="." instance=ExtResource( 6 )]
-position = Vector2( 961.239, 577.555 )
+[node name="ObjectiveSpring" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1726.76, 1984 )
 
-[node name="ObjectiveSummer" parent="." instance=ExtResource( 6 )]
-position = Vector2( 193.601, -956.83 )
+[node name="ObjectiveSummer" parent="." instance=ExtResource( 7 )]
+position = Vector2( -2113.24, -2496 )
 rotation = -1.5708
 type = 1
 
-[node name="ObjectiveFall" parent="." instance=ExtResource( 6 )]
-position = Vector2( -190.652, -63.7223 )
+[node name="ObjectiveFall" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1982.76, -2624 )
 rotation = 3.14159
 type = 2
 
-[node name="ObjectiveWinter" parent="." instance=ExtResource( 6 )]
-position = Vector2( 320.926, 446.966 )
+[node name="ObjectiveWinter" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3905.24, -3776 )
 rotation = 1.5708
 type = 3
 
-[node name="ClimbingBlock1" type="Area2D" parent="."]
-position = Vector2( 832, -576 )
-collision_layer = 0
+[node name="CrumblingBlocks" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="BreakingBlock" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 5824, 1024 )
+rotation = 1.5708
+
+[node name="BreakingBlock2" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 6080, 768 )
+rotation = 1.5708
+
+[node name="BreakingBlock3" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 6272, 1024 )
+rotation = 1.5708
+
+[node name="BreakingBlock4" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 1024 )
+rotation = 1.5708
+
+[node name="BreakingBlock5" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 1152 )
+rotation = 1.5708
+
+[node name="BreakingBlock6" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 1792 )
+rotation = 1.5708
+
+[node name="BreakingBlock7" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 1920 )
+rotation = 1.5708
+
+[node name="BreakingBlock8" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 2560 )
+rotation = 1.5708
+
+[node name="BreakingBlock9" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 2688 )
+rotation = 1.5708
+
+[node name="BreakingBlock10" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 128 )
+rotation = 1.5708
+
+[node name="BreakingBlock11" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 256 )
+rotation = 1.5708
+
+[node name="BreakingBlock12" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 7104, 384 )
+rotation = 1.5708
+
+[node name="BreakingBlock13" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 1472, 128 )
+rotation = 1.5708
+
+[node name="BreakingBlock14" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 1472, 256 )
+rotation = 1.5708
+
+[node name="BreakingBlock15" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 1472, 384 )
+rotation = 1.5708
+
+[node name="BreakingBlock16" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 704, 384 )
+rotation = 1.5708
+
+[node name="BreakingBlock17" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 704, 256 )
+rotation = 1.5708
+
+[node name="BreakingBlock18" parent="CrumblingBlocks" instance=ExtResource( 8 )]
+position = Vector2( 704, 128 )
+rotation = 1.5708
+
+[node name="vignes" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="ClimbingBlock" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 7616, 4736 )
+rotation = 4.71239
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="ClimbingPart1" parent="ClimbingBlock1" instance=ExtResource( 7 )]
-position = Vector2( 128, 0 )
-rotation = 4.71239
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock" instance=ExtResource( 9 )]
+position = Vector2( 0, 128 )
 
-[node name="ClimbingPart2" parent="ClimbingBlock1" instance=ExtResource( 7 )]
-visible = false
-rotation = 4.71239
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock" instance=ExtResource( 9 )]
 
-[node name="ClimbingPart3" parent="ClimbingBlock1" instance=ExtResource( 7 )]
-visible = false
-position = Vector2( -128, 0 )
-rotation = 4.71239
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock" instance=ExtResource( 9 )]
+position = Vector2( 0, -128 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ClimbingBlock1"]
-shape = SubResource( 4 )
-disabled = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock"]
+shape = SubResource( 6 )
+
+[node name="ClimbingBlock2" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 6080, 2944 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock2"]
+shape = SubResource( 7 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock2" instance=ExtResource( 9 )]
+position = Vector2( 0, 128 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock2" instance=ExtResource( 9 )]
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock2" instance=ExtResource( 9 )]
+position = Vector2( 0, -128 )
+
+[node name="ClimbingBlock3" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 7616, 6016 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock3"]
+shape = SubResource( 8 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock3" instance=ExtResource( 9 )]
+position = Vector2( 0, 128 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock3" instance=ExtResource( 9 )]
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock3" instance=ExtResource( 9 )]
+position = Vector2( 0, -128 )
+
+[node name="ClimbingBlock4" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 5632, 4864 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock4"]
+shape = SubResource( 9 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock4" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock4" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock4" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock4" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingBlock5" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 3456, 5120 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock5"]
+shape = SubResource( 10 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock5" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingBlock6" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 5888, 6400 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock6"]
+shape = SubResource( 10 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock6" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingBlock7" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 1408, 3072 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock7"]
+shape = SubResource( 10 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock7" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingBlock8" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 2688, 1024 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock8"]
+shape = SubResource( 10 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock8" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingBlock9" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 2048, 3712 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock9"]
+shape = SubResource( 10 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock9" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingBlock10" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 2688, 4352 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock10"]
+shape = SubResource( 10 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock10" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingBlock11" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 5248, 5248 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock11"]
+shape = SubResource( 11 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, 576 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart9" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingPart10" parent="vignes/ClimbingBlock11" instance=ExtResource( 9 )]
+position = Vector2( 0, -576 )
+
+[node name="ClimbingBlock12" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 7040, 3584 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock12"]
+shape = SubResource( 12 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, 704 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, 576 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart9" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart10" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingPart11" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, -576 )
+
+[node name="ClimbingPart12" parent="vignes/ClimbingBlock12" instance=ExtResource( 9 )]
+position = Vector2( 0, -704 )
+
+[node name="ClimbingBlock13" type="Area2D" parent="vignes"]
+editor/display_folded = true
+position = Vector2( 4480, 2176 )
+rotation = 4.71239
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock13"]
+shape = SubResource( 13 )
+
+[node name="ClimbingPart1" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 1472 )
+
+[node name="ClimbingPart2" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 1344 )
+
+[node name="ClimbingPart3" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 1216 )
+
+[node name="ClimbingPart4" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 1088 )
+
+[node name="ClimbingPart5" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 960 )
+
+[node name="ClimbingPart6" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 832 )
+
+[node name="ClimbingPart7" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 704 )
+
+[node name="ClimbingPart8" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 576 )
+
+[node name="ClimbingPart9" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 448 )
+
+[node name="ClimbingPart10" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 320 )
+
+[node name="ClimbingPart11" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 192 )
+
+[node name="ClimbingPart12" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, 64 )
+
+[node name="ClimbingPart13" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -64 )
+
+[node name="ClimbingPart14" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -192 )
+
+[node name="ClimbingPart15" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -320 )
+
+[node name="ClimbingPart16" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -448 )
+
+[node name="ClimbingPart17" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -576 )
+
+[node name="ClimbingPart18" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -704 )
+
+[node name="ClimbingPart19" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -832 )
+
+[node name="ClimbingPart20" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -960 )
+
+[node name="ClimbingPart21" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -1088 )
+
+[node name="ClimbingPart22" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -1216 )
+
+[node name="ClimbingPart23" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -1344 )
+
+[node name="ClimbingPart24" parent="vignes/ClimbingBlock13" instance=ExtResource( 9 )]
+position = Vector2( 0, -1472 )
 [connection signal="stomped" from="Player" to="." method="_on_Player_stomped"]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
@@ -172,5 +820,29 @@ disabled = true
 [connection signal="activated" from="ObjectiveSummer" to="." method="_on_Objective_activated"]
 [connection signal="activated" from="ObjectiveFall" to="." method="_on_Objective_activated"]
 [connection signal="activated" from="ObjectiveWinter" to="." method="_on_Objective_activated"]
-[connection signal="body_entered" from="ClimbingBlock1" to="." method="_on_ClimbingBlock_body_entered"]
-[connection signal="body_exited" from="ClimbingBlock1" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock2" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock2" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock3" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock3" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock4" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock4" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock5" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock5" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock6" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock6" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock7" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock7" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock8" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock8" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock9" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock9" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock10" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock10" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock11" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock11" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock12" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock12" to="." method="_on_ClimbingBlock_body_exited"]
+[connection signal="body_entered" from="vignes/ClimbingBlock13" to="." method="_on_ClimbingBlock_body_entered"]
+[connection signal="body_exited" from="vignes/ClimbingBlock13" to="." method="_on_ClimbingBlock_body_exited"]
