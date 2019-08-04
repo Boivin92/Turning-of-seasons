@@ -54,7 +54,7 @@ func _set_sprite(slide: Vector2) -> void:
 	elif is_on_floor() && !is_on_ladder:
 		$AnimatedSprite.play("walk")
 		print("Play Walk")
-	elif is_on_ladder && Input.is_action_pressed("climb"):
+	elif is_on_ladder && slide.y != 0:
 		$AnimatedSprite.play("climb")
 		print("Play Climb")
 	elif slide.y < 0:
@@ -63,7 +63,7 @@ func _set_sprite(slide: Vector2) -> void:
 	elif slide.y > 0:
 		$AnimatedSprite.play("fall")
 		print("Play Fall")
-	elif is_on_ladder: 
+	elif is_on_ladder:
 		$AnimatedSprite.play("idle")
 		print("Play Idle")
 		
