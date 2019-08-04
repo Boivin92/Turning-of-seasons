@@ -101,4 +101,5 @@ sounds = [ ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource(
 [node name="RandomSoundPlayer2" type="Node" parent="."]
 script = ExtResource( 31 )
 sounds = [  ]
+
 [connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
