@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/destructibleW15.png-79594fe5ed0778abcb3459b686f3db13.stex"
+path="res://.import/destructibleW10.png-9a9b28b69dfc9ad58d1708ec091f0570.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/breakingBlock/sprites/destructibleW15.png"
-dest_files=[ "res://.import/destructibleW15.png-79594fe5ed0778abcb3459b686f3db13.stex" ]
+source_file="res://TileSet/breakingBlock/sprites/winter/destructibleW10.png"
+dest_files=[ "res://.import/destructibleW10.png-9a9b28b69dfc9ad58d1708ec091f0570.stex" ]
 
 [params]
 

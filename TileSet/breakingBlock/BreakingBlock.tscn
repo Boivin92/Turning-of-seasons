@@ -1,32 +1,50 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://TileSet/breakingBlock/BreakingBlock.gd" type="Script" id=1]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW01.png" type="Texture" id=2]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW02.png" type="Texture" id=3]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW03.png" type="Texture" id=4]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW04.png" type="Texture" id=5]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW05.png" type="Texture" id=6]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW06.png" type="Texture" id=7]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW07.png" type="Texture" id=8]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW08.png" type="Texture" id=9]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW09.png" type="Texture" id=10]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW10.png" type="Texture" id=11]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW11.png" type="Texture" id=12]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW12.png" type="Texture" id=13]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW13.png" type="Texture" id=14]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW14.png" type="Texture" id=15]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW15.png" type="Texture" id=16]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW16.png" type="Texture" id=17]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW17.png" type="Texture" id=18]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW18.png" type="Texture" id=19]
-[ext_resource path="res://TileSet/breakingBlock/sprites/destructibleW19.png" type="Texture" id=20]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW01.png" type="Texture" id=2]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW02.png" type="Texture" id=3]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW03.png" type="Texture" id=4]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW04.png" type="Texture" id=5]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW05.png" type="Texture" id=6]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW06.png" type="Texture" id=7]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW07.png" type="Texture" id=8]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW08.png" type="Texture" id=9]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW09.png" type="Texture" id=10]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW10.png" type="Texture" id=11]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW11.png" type="Texture" id=12]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW12.png" type="Texture" id=13]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW13.png" type="Texture" id=14]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW14.png" type="Texture" id=15]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW15.png" type="Texture" id=16]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW16.png" type="Texture" id=17]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW17.png" type="Texture" id=18]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW18.png" type="Texture" id=19]
+[ext_resource path="res://TileSet/breakingBlock/sprites/winter/destructibleW19.png" type="Texture" id=20]
+[ext_resource path="res://TileSet/breakingBlock/sprites/fall/destructibleF.png" type="Texture" id=21]
+[ext_resource path="res://TileSet/breakingBlock/sprites/summer/desctructibleSM.png" type="Texture" id=22]
+[ext_resource path="res://TileSet/breakingBlock/sprites/spring/destrcutibleS.png" type="Texture" id=23]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
 "loop": false,
-"name": "crumbling",
+"name": "winter",
 "speed": 9.0
+}, {
+"frames": [ ExtResource( 21 ) ],
+"loop": false,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ) ],
+"loop": false,
+"name": "summer",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": false,
+"name": "spring",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -41,7 +59,7 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 128 )
 frames = SubResource( 1 )
-animation = "crumbling"
+animation = "winter"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
