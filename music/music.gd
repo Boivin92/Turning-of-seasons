@@ -16,6 +16,12 @@ func _ready() -> void:
 func _on_TextureButton_toggled(button_pressed: bool) -> void:
 	ActivateMusic(button_pressed)
 
+func PlayLeverSound():
+	$LeverSound.play()
+	
+func PlayRotationSound():
+	$RotationSound.play()
+
 func ActivateMusic(toggle : bool) -> void:
 	var db : float
 	if toggle:

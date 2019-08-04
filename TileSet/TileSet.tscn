@@ -2,7 +2,7 @@
 
 [ext_resource path="res://TileSet/tilesheet.png" type="Texture" id=1]
 
-[sub_resource type="RectangleShape2D" id=31]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 64, 64 )
 
 [node name="TileSet" type="Node2D"]
@@ -19,7 +19,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fr_BottomLeft/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fr_BottomA" type="Sprite" parent="."]
 editor/display_folded = true
@@ -243,7 +243,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stone/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_BottomFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -257,7 +257,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_BottomFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_BottomFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -271,7 +271,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_BottomFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_BottomFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -285,7 +285,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_BottomFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_BottomFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -299,7 +299,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_BottomFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_TopFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -313,7 +313,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_TopFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_TopFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -327,7 +327,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_TopFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_TopFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -341,7 +341,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_TopFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_TopFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -355,7 +355,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_TopFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_LeftFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -369,7 +369,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_LeftFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_LeftFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -383,7 +383,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_LeftFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_LeftFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -397,7 +397,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_LeftFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_LeftFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -411,7 +411,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_LeftFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_RightFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -425,7 +425,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_RightFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_RightFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -439,7 +439,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_RightFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_RightFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -453,7 +453,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_RightFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_RightFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -467,7 +467,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_RightFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sp_Block" type="Sprite" parent="."]
 editor/display_folded = true
@@ -481,7 +481,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_Block/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_BottomFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -495,7 +495,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_BottomFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_BottomFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -509,7 +509,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_BottomFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_BottomFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -523,7 +523,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_BottomFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_BottomFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -537,7 +537,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_BottomFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_TopFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -551,7 +551,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_TopFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_TopFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -565,7 +565,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_TopFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_TopFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -579,7 +579,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_TopFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_TopFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -593,7 +593,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_TopFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_LeftFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -607,7 +607,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_LeftFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_LeftFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -621,7 +621,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_LeftFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_LeftFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -635,7 +635,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_LeftFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_LeftFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -649,7 +649,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_LeftFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_RightFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -663,7 +663,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_RightFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_RightFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -677,7 +677,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_RightFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_RightFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -691,7 +691,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_RightFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_RightFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -705,7 +705,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_RightFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Sm_Block" type="Sprite" parent="."]
 editor/display_folded = true
@@ -719,7 +719,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_Block/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_BottomFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -733,7 +733,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_BottomFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_BottomFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -747,7 +747,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_BottomFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_BottomFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -761,7 +761,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_BottomFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_BottomFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -775,7 +775,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_BottomFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_TopFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -789,7 +789,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_TopFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_TopFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -803,7 +803,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_TopFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_TopFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -817,7 +817,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_TopFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_TopFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -831,7 +831,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_TopFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_LeftFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -845,7 +845,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_LeftFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_LeftFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -859,7 +859,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_LeftFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_LeftFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -873,7 +873,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_LeftFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_LeftFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -887,7 +887,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_LeftFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_RightFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -901,7 +901,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_RightFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_RightFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -915,7 +915,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_RightFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_RightFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -929,7 +929,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_RightFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_RightFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -943,7 +943,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_RightFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Fa_Block" type="Sprite" parent="."]
 editor/display_folded = true
@@ -957,7 +957,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_Block/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_BottomFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -971,7 +971,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_BottomFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_BottomFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -985,7 +985,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_BottomFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_BottomFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -999,7 +999,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_BottomFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_BottomFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1013,7 +1013,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_BottomFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_TopFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1027,7 +1027,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_TopFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_TopFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1041,7 +1041,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_TopFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_TopFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1055,7 +1055,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_TopFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_TopFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1069,7 +1069,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_TopFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_LeftFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1083,7 +1083,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_LeftFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_LeftFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1097,7 +1097,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_LeftFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_LeftFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1111,7 +1111,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_LeftFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_LeftFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1125,7 +1125,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_LeftFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_RightFancy1" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1139,7 +1139,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_RightFancy1/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_RightFancy2" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1153,7 +1153,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_RightFancy2/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_RightFancy3" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1167,7 +1167,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_RightFancy3/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_RightFancy4" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1181,7 +1181,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_RightFancy4/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
 [node name="Wr_Block" type="Sprite" parent="."]
 editor/display_folded = true
@@ -1195,5 +1195,5 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_Block/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 1 )
 
