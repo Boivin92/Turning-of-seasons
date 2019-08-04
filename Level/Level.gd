@@ -15,10 +15,10 @@ func _ready():
 	NbOfTurn = 0
 
 const FIXED = 17
-const ROW = 39
+const ROW = 40
 func remap_tileset():
-	for x in range(-10, 10):
-		for y in range(-10, 10):
+	for x in range(-35, 35):
+		for y in range(-35, 35):
 			var cell = $TileMap.get_cell(x, y)
 			if cell >= FIXED:
 				cell += ROW
