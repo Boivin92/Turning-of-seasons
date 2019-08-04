@@ -1,0 +1,22 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://CrumblingAudio.gd" type="Script" id=1]
+[ext_resource path="res://RandomSoundPlayer.gd" type="Script" id=2]
+[ext_resource path="res://TileSet/breakingBlock/sounds/ice_cracking_melting_01.wav" type="AudioStream" id=3]
+[ext_resource path="res://TileSet/breakingBlock/sounds/ice_cracking_melting_02.wav" type="AudioStream" id=4]
+[ext_resource path="res://TileSet/breakingBlock/sounds/ice_cracking_melting_03.wav" type="AudioStream" id=5]
+[ext_resource path="res://TileSet/breakingBlock/sounds/ice_cracking_melting_04.wav" type="AudioStream" id=6]
+[ext_resource path="res://TileSet/breakingBlock/sounds/ice_cracking_melting_05.wav" type="AudioStream" id=7]
+[ext_resource path="res://TileSet/breakingBlock/sounds/ice_cracking_melting_06.wav" type="AudioStream" id=8]
+
+[node name="CrumblingAudio" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="RandomSoundPlayer" type="Node" parent="."]
+script = ExtResource( 2 )
+sounds = [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="RandomSoundPlayer"]
+[connection signal="finished" from="RandomSoundPlayer/AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]

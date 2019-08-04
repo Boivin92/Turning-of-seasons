@@ -35,6 +35,7 @@ config/icon="res://icon.png"
 music="*res://music/music.tscn"
 WinterSnow="*res://Level/WinterSnow.tscn"
 SeasonChanger="*res://Level/SeasonChanger.tscn"
+CrumblingAudio="*res://TileSet/breakingBlock/CrumblingAudio.tscn"
 
 [display]
 
