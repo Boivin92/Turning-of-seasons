@@ -88,7 +88,7 @@ func get_input():
 		velocity.x += run_speed
 	if left:
 		velocity.x -= run_speed
-	if jump && is_on_floor():
+	if jump && is_on_floor() && !is_on_ladder:
 		velocity.y = -jump_speed
 	if pound && not is_on_floor():
 		velocity.y = 2000
@@ -96,7 +96,6 @@ func get_input():
 		pounding = true
 	if climb && is_on_ladder:
 		velocity.y = -climb_speed
-
 
 func _on_AnimatedSprite_frame_changed() -> void:
 	if $AnimatedSprite.animation == "walk":
