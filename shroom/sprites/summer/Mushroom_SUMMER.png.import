@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/destructibleW17.png-b88c2de50bc805c1d6a88e19d5b996ed.stex"
+path="res://.import/Mushroom_SUMMER.png-984afde53be9d43dd129d621cf3cddf2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/breakingBlock/sprites/destructibleW17.png"
-dest_files=[ "res://.import/destructibleW17.png-b88c2de50bc805c1d6a88e19d5b996ed.stex" ]
+source_file="res://shroom/sprites/summer/Mushroom_SUMMER.png"
+dest_files=[ "res://.import/Mushroom_SUMMER.png-984afde53be9d43dd129d621cf3cddf2.stex" ]
 
 [params]
 

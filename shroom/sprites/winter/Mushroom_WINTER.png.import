@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/destructibleW01.png-b176b81e52a9474af16e13647ac72709.stex"
+path="res://.import/Mushroom_WINTER.png-dd44246b0fea69c9c528c2e9a9405c59.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/breakingBlock/sprites/destructibleW01.png"
-dest_files=[ "res://.import/destructibleW01.png-b176b81e52a9474af16e13647ac72709.stex" ]
+source_file="res://shroom/sprites/winter/Mushroom_WINTER.png"
+dest_files=[ "res://.import/Mushroom_WINTER.png-dd44246b0fea69c9c528c2e9a9405c59.stex" ]
 
 [params]
 
