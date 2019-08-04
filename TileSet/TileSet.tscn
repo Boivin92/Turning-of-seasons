@@ -791,6 +791,20 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_Nudge4/StaticBody2D"]
 shape = SubResource( 1 )
 
+[node name="Sp_Smooth" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4992, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_Smooth"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_Smooth/StaticBody2D"]
+shape = SubResource( 1 )
+
 [node name="Sm_BottomFancy1" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -1335,6 +1349,20 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_Nudge4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_Smooth" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4992, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_Smooth"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_Smooth/StaticBody2D"]
 shape = SubResource( 1 )
 
 [node name="Fa_BottomFancy1" type="Sprite" parent="."]
@@ -1883,6 +1911,20 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_Nudge4/StaticBody2D"]
 shape = SubResource( 1 )
 
+[node name="Fa_Smooth" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4992, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_Smooth"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_Smooth/StaticBody2D"]
+shape = SubResource( 1 )
+
 [node name="Wr_BottomFancy1" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -2427,5 +2469,19 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_Nudge4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_Smooth" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4992, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_Smooth"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_Smooth/StaticBody2D"]
 shape = SubResource( 1 )
 
