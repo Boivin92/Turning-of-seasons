@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/idle/character_idel1.png" type="Texture" id=2]
@@ -19,6 +19,14 @@
 [ext_resource path="res://Player/fall/character_fall2.png" type="Texture" id=17]
 [ext_resource path="res://Player/woddy_le_golem_base.png" type="Texture" id=18]
 [ext_resource path="res://Camera2DWithShake.gd" type="Script" id=19]
+[ext_resource path="res://music/RandomSoundPlayer.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_01.wav" type="AudioStream" id=21]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_02.wav" type="AudioStream" id=22]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_03.wav" type="AudioStream" id=23]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_04.wav" type="AudioStream" id=24]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_05.wav" type="AudioStream" id=25]
+[ext_resource path="res://Player/Walk/footstep_concrete_land_v2_06.wav" type="AudioStream" id=26]
+[ext_resource path="res://RandomSoundPlayer.gd" type="Script" id=27]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -56,9 +64,7 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 42.2928, 118.125 )
 
-[node name="Player" type="KinematicBody2D" groups=[
-"player",
-]]
+[node name="Player" type="KinematicBody2D"]
 collision_mask = 6
 script = ExtResource( 1 )
 __meta__ = {
@@ -67,7 +73,6 @@ __meta__ = {
 gravity = 1200
 run_speed = 350
 jump_speed = 800
-climb_speed = 150
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
@@ -81,3 +86,10 @@ shape = SubResource( 2 )
 current = true
 zoom = Vector2( 4, 4 )
 script = ExtResource( 19 )
+
+[node name="RandomSoundPlayer" parent="." instance=ExtResource( 20 )]
+sounds = [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ]
+
+[node name="RandomSoundPlayer2" type="Node" parent="."]
+script = ExtResource( 27 )
+[connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
