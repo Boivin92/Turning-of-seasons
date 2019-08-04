@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Level/SeasonChanger.gd" type="Script" id=1]
+[ext_resource path="res://Level/flower.png" type="Texture" id=2]
+[ext_resource path="res://Level/sun.png" type="Texture" id=3]
+[ext_resource path="res://Level/leaf.png" type="Texture" id=4]
+[ext_resource path="res://Level/flocon.png" type="Texture" id=5]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 300, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 149.0
+angle_random = 0.77
+scale = 0.7
+
+[node name="Node2D" type="CanvasLayer"]
+script = ExtResource( 1 )
+spring_icon = ExtResource( 2 )
+summer_icon = ExtResource( 3 )
+autumn_icon = ExtResource( 4 )
+winter_icon = ExtResource( 5 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( -45.0948, 310.653 )
+rotation = 4.71239
+emitting = false
+amount = 7000
+lifetime = 5.0
+one_shot = true
+explosiveness = 0.29
+randomness = 0.72
+process_material = SubResource( 1 )
+texture = ExtResource( 5 )
