@@ -27,9 +27,8 @@ func reset_objective() -> void:
 func _ready() -> void:
 	$AnimatedSprite.set_animation(get_animation_name())
 
-
-func _on_Objective_body_entered(body: PhysicsBody2D) -> void:
-	if body && !activated && get_parent().CurrentSeason == type:
+func interact() -> void:
+	if not activated && get_parent().CurrentSeason == type:
 		activated = true
 		$AnimatedSprite.play()
 		music.PlayLeverSound()
