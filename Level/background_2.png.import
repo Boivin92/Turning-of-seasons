@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/background_2.png-25b6fd7ca1e9d45d85ae2d7d1a2a491b.image"
+
+[deps]
+
+source_file="res://Level/background_2.png"
+dest_files=[ "res://.import/background_2.png-25b6fd7ca1e9d45d85ae2d7d1a2a491b.image" ]
+
+[params]
+
