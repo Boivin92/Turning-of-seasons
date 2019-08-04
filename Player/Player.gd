@@ -9,6 +9,7 @@ export (int) var climb_speed : int
 var pounding : bool
 var braced : bool = false
 var is_on_ladder = false
+var interact : bool = false
 
 const IDLE = "idle"
 const WALK = "walk"
@@ -56,6 +57,8 @@ func _physics_process(delta):
 	if raycastReturn != null:
 		if raycastReturn.is_in_group("breakable"):
 			raycastReturn.crumble()
+		if raycastReturn.is_in_group("interactible") && interact:
+			raycastReturn.interact()
 		
 func _set_sprite(slide: Vector2) -> void:
 	if braced:
@@ -78,6 +81,11 @@ func _set_sprite(slide: Vector2) -> void:
 		anim = CLIMB
 	$AnimatedSprite.play(anim)
 
+func bounce(bouncyPower : int):
+	if not is_on_floor() && velocity.y > 0:
+		pass
+	pass
+
 func _shake_camera():
 	$Camera2DWithShake.shake(0.4, 15, 8)
 	emit_signal("stomped")
@@ -88,6 +96,7 @@ func get_input():
 	var jump = Input.is_action_pressed("jump")
 	var pound = Input.is_action_pressed("pound")
 	var climb = Input.is_action_pressed("climb")
+	interact = Input.is_action_pressed("interact")
 	
 	velocity.x = 0
 	if right:
