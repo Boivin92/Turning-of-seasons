@@ -819,11 +819,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 47/z_index = 0
-48/name = "Sm_BottomFancy1"
+48/name = "Sp_L1"
 48/texture = ExtResource( 1 )
 48/tex_offset = Vector2( 0, 0 )
 48/modulate = Color( 1, 1, 1, 1 )
-48/region = Rect2( 0, 256, 128, 128 )
+48/region = Rect2( 3968, 128, 128, 128 )
 48/tile_mode = 0
 48/occluder_offset = Vector2( 64, 64 )
 48/navigation_offset = Vector2( 64, 64 )
@@ -835,11 +835,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 48/z_index = 0
-49/name = "Sm_BottomFancy2"
+49/name = "Sp_L2"
 49/texture = ExtResource( 1 )
 49/tex_offset = Vector2( 0, 0 )
 49/modulate = Color( 1, 1, 1, 1 )
-49/region = Rect2( 128, 256, 128, 128 )
+49/region = Rect2( 4096, 128, 128, 128 )
 49/tile_mode = 0
 49/occluder_offset = Vector2( 64, 64 )
 49/navigation_offset = Vector2( 64, 64 )
@@ -851,11 +851,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 49/z_index = 0
-50/name = "Sm_BottomFancy3"
+50/name = "Sp_L3"
 50/texture = ExtResource( 1 )
 50/tex_offset = Vector2( 0, 0 )
 50/modulate = Color( 1, 1, 1, 1 )
-50/region = Rect2( 256, 256, 128, 128 )
+50/region = Rect2( 4224, 128, 128, 128 )
 50/tile_mode = 0
 50/occluder_offset = Vector2( 64, 64 )
 50/navigation_offset = Vector2( 64, 64 )
@@ -867,11 +867,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 50/z_index = 0
-51/name = "Sm_BottomFancy4"
+51/name = "Sp_L4"
 51/texture = ExtResource( 1 )
 51/tex_offset = Vector2( 0, 0 )
 51/modulate = Color( 1, 1, 1, 1 )
-51/region = Rect2( 384, 256, 128, 128 )
+51/region = Rect2( 4352, 128, 128, 128 )
 51/tile_mode = 0
 51/occluder_offset = Vector2( 64, 64 )
 51/navigation_offset = Vector2( 64, 64 )
@@ -883,11 +883,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 51/z_index = 0
-52/name = "Sm_TopFancy1"
+52/name = "Sp_Nudge1"
 52/texture = ExtResource( 1 )
 52/tex_offset = Vector2( 0, 0 )
 52/modulate = Color( 1, 1, 1, 1 )
-52/region = Rect2( 896, 256, 128, 128 )
+52/region = Rect2( 4480, 128, 128, 128 )
 52/tile_mode = 0
 52/occluder_offset = Vector2( 64, 64 )
 52/navigation_offset = Vector2( 64, 64 )
@@ -899,11 +899,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 52/z_index = 0
-53/name = "Sm_TopFancy2"
+53/name = "Sp_Nudge2"
 53/texture = ExtResource( 1 )
 53/tex_offset = Vector2( 0, 0 )
 53/modulate = Color( 1, 1, 1, 1 )
-53/region = Rect2( 768, 256, 128, 128 )
+53/region = Rect2( 4608, 128, 128, 128 )
 53/tile_mode = 0
 53/occluder_offset = Vector2( 64, 64 )
 53/navigation_offset = Vector2( 64, 64 )
@@ -915,11 +915,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 53/z_index = 0
-54/name = "Sm_TopFancy3"
+54/name = "Sp_Nudge3"
 54/texture = ExtResource( 1 )
 54/tex_offset = Vector2( 0, 0 )
 54/modulate = Color( 1, 1, 1, 1 )
-54/region = Rect2( 640, 256, 128, 128 )
+54/region = Rect2( 4736, 128, 128, 128 )
 54/tile_mode = 0
 54/occluder_offset = Vector2( 64, 64 )
 54/navigation_offset = Vector2( 64, 64 )
@@ -931,11 +931,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 54/z_index = 0
-55/name = "Sm_TopFancy4"
+55/name = "Sp_Nudge4"
 55/texture = ExtResource( 1 )
 55/tex_offset = Vector2( 0, 0 )
 55/modulate = Color( 1, 1, 1, 1 )
-55/region = Rect2( 512, 256, 128, 128 )
+55/region = Rect2( 4864, 128, 128, 128 )
 55/tile_mode = 0
 55/occluder_offset = Vector2( 64, 64 )
 55/navigation_offset = Vector2( 64, 64 )
@@ -947,11 +947,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 55/z_index = 0
-56/name = "Sm_LeftFancy1"
+56/name = "Sm_BottomFancy1"
 56/texture = ExtResource( 1 )
 56/tex_offset = Vector2( 0, 0 )
 56/modulate = Color( 1, 1, 1, 1 )
-56/region = Rect2( 1024, 256, 128, 128 )
+56/region = Rect2( 0, 256, 128, 128 )
 56/tile_mode = 0
 56/occluder_offset = Vector2( 64, 64 )
 56/navigation_offset = Vector2( 64, 64 )
@@ -963,11 +963,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 56/z_index = 0
-57/name = "Sm_LeftFancy2"
+57/name = "Sm_BottomFancy2"
 57/texture = ExtResource( 1 )
 57/tex_offset = Vector2( 0, 0 )
 57/modulate = Color( 1, 1, 1, 1 )
-57/region = Rect2( 1152, 256, 128, 128 )
+57/region = Rect2( 128, 256, 128, 128 )
 57/tile_mode = 0
 57/occluder_offset = Vector2( 64, 64 )
 57/navigation_offset = Vector2( 64, 64 )
@@ -979,11 +979,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 57/z_index = 0
-58/name = "Sm_LeftFancy3"
+58/name = "Sm_BottomFancy3"
 58/texture = ExtResource( 1 )
 58/tex_offset = Vector2( 0, 0 )
 58/modulate = Color( 1, 1, 1, 1 )
-58/region = Rect2( 1280, 256, 128, 128 )
+58/region = Rect2( 256, 256, 128, 128 )
 58/tile_mode = 0
 58/occluder_offset = Vector2( 64, 64 )
 58/navigation_offset = Vector2( 64, 64 )
@@ -995,11 +995,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 58/z_index = 0
-59/name = "Sm_LeftFancy4"
+59/name = "Sm_BottomFancy4"
 59/texture = ExtResource( 1 )
 59/tex_offset = Vector2( 0, 0 )
 59/modulate = Color( 1, 1, 1, 1 )
-59/region = Rect2( 1408, 256, 128, 128 )
+59/region = Rect2( 384, 256, 128, 128 )
 59/tile_mode = 0
 59/occluder_offset = Vector2( 64, 64 )
 59/navigation_offset = Vector2( 64, 64 )
@@ -1011,11 +1011,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 59/z_index = 0
-60/name = "Sm_RightFancy1"
+60/name = "Sm_TopFancy1"
 60/texture = ExtResource( 1 )
 60/tex_offset = Vector2( 0, 0 )
 60/modulate = Color( 1, 1, 1, 1 )
-60/region = Rect2( 1920, 256, 128, 128 )
+60/region = Rect2( 896, 256, 128, 128 )
 60/tile_mode = 0
 60/occluder_offset = Vector2( 64, 64 )
 60/navigation_offset = Vector2( 64, 64 )
@@ -1027,11 +1027,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 60/z_index = 0
-61/name = "Sm_RightFancy2"
+61/name = "Sm_TopFancy2"
 61/texture = ExtResource( 1 )
 61/tex_offset = Vector2( 0, 0 )
 61/modulate = Color( 1, 1, 1, 1 )
-61/region = Rect2( 1792, 256, 128, 128 )
+61/region = Rect2( 768, 256, 128, 128 )
 61/tile_mode = 0
 61/occluder_offset = Vector2( 64, 64 )
 61/navigation_offset = Vector2( 64, 64 )
@@ -1043,11 +1043,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 61/z_index = 0
-62/name = "Sm_RightFancy3"
+62/name = "Sm_TopFancy3"
 62/texture = ExtResource( 1 )
 62/tex_offset = Vector2( 0, 0 )
 62/modulate = Color( 1, 1, 1, 1 )
-62/region = Rect2( 1664, 256, 128, 128 )
+62/region = Rect2( 640, 256, 128, 128 )
 62/tile_mode = 0
 62/occluder_offset = Vector2( 64, 64 )
 62/navigation_offset = Vector2( 64, 64 )
@@ -1059,11 +1059,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 62/z_index = 0
-63/name = "Sm_RightFancy4"
+63/name = "Sm_TopFancy4"
 63/texture = ExtResource( 1 )
 63/tex_offset = Vector2( 0, 0 )
 63/modulate = Color( 1, 1, 1, 1 )
-63/region = Rect2( 1536, 256, 128, 128 )
+63/region = Rect2( 512, 256, 128, 128 )
 63/tile_mode = 0
 63/occluder_offset = Vector2( 64, 64 )
 63/navigation_offset = Vector2( 64, 64 )
@@ -1075,11 +1075,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 63/z_index = 0
-64/name = "Sm_Block"
+64/name = "Sm_LeftFancy1"
 64/texture = ExtResource( 1 )
 64/tex_offset = Vector2( 0, 0 )
 64/modulate = Color( 1, 1, 1, 1 )
-64/region = Rect2( 2048, 256, 128, 128 )
+64/region = Rect2( 1024, 256, 128, 128 )
 64/tile_mode = 0
 64/occluder_offset = Vector2( 64, 64 )
 64/navigation_offset = Vector2( 64, 64 )
@@ -1091,11 +1091,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 64/z_index = 0
-65/name = "Sm_Horiz1"
+65/name = "Sm_LeftFancy2"
 65/texture = ExtResource( 1 )
 65/tex_offset = Vector2( 0, 0 )
 65/modulate = Color( 1, 1, 1, 1 )
-65/region = Rect2( 2176, 256, 128, 128 )
+65/region = Rect2( 1152, 256, 128, 128 )
 65/tile_mode = 0
 65/occluder_offset = Vector2( 64, 64 )
 65/navigation_offset = Vector2( 64, 64 )
@@ -1107,11 +1107,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 65/z_index = 0
-66/name = "Sm_Horiz2"
+66/name = "Sm_LeftFancy3"
 66/texture = ExtResource( 1 )
 66/tex_offset = Vector2( 0, 0 )
 66/modulate = Color( 1, 1, 1, 1 )
-66/region = Rect2( 2304, 256, 128, 128 )
+66/region = Rect2( 1280, 256, 128, 128 )
 66/tile_mode = 0
 66/occluder_offset = Vector2( 64, 64 )
 66/navigation_offset = Vector2( 64, 64 )
@@ -1123,11 +1123,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 66/z_index = 0
-67/name = "Sm_Horiz3"
+67/name = "Sm_LeftFancy4"
 67/texture = ExtResource( 1 )
 67/tex_offset = Vector2( 0, 0 )
 67/modulate = Color( 1, 1, 1, 1 )
-67/region = Rect2( 2432, 256, 128, 128 )
+67/region = Rect2( 1408, 256, 128, 128 )
 67/tile_mode = 0
 67/occluder_offset = Vector2( 64, 64 )
 67/navigation_offset = Vector2( 64, 64 )
@@ -1139,11 +1139,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 67/z_index = 0
-68/name = "Sm_Vertic1"
+68/name = "Sm_RightFancy1"
 68/texture = ExtResource( 1 )
 68/tex_offset = Vector2( 0, 0 )
 68/modulate = Color( 1, 1, 1, 1 )
-68/region = Rect2( 2560, 256, 128, 128 )
+68/region = Rect2( 1920, 256, 128, 128 )
 68/tile_mode = 0
 68/occluder_offset = Vector2( 64, 64 )
 68/navigation_offset = Vector2( 64, 64 )
@@ -1155,11 +1155,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 68/z_index = 0
-69/name = "Sm_Vertic2"
+69/name = "Sm_RightFancy2"
 69/texture = ExtResource( 1 )
 69/tex_offset = Vector2( 0, 0 )
 69/modulate = Color( 1, 1, 1, 1 )
-69/region = Rect2( 2688, 256, 128, 128 )
+69/region = Rect2( 1792, 256, 128, 128 )
 69/tile_mode = 0
 69/occluder_offset = Vector2( 64, 64 )
 69/navigation_offset = Vector2( 64, 64 )
@@ -1171,11 +1171,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 69/z_index = 0
-70/name = "Sm_Vertic3"
+70/name = "Sm_RightFancy3"
 70/texture = ExtResource( 1 )
 70/tex_offset = Vector2( 0, 0 )
 70/modulate = Color( 1, 1, 1, 1 )
-70/region = Rect2( 2816, 256, 128, 128 )
+70/region = Rect2( 1664, 256, 128, 128 )
 70/tile_mode = 0
 70/occluder_offset = Vector2( 64, 64 )
 70/navigation_offset = Vector2( 64, 64 )
@@ -1187,11 +1187,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 70/z_index = 0
-71/name = "Sm_Coin1"
+71/name = "Sm_RightFancy4"
 71/texture = ExtResource( 1 )
 71/tex_offset = Vector2( 0, 0 )
 71/modulate = Color( 1, 1, 1, 1 )
-71/region = Rect2( 2944, 256, 128, 128 )
+71/region = Rect2( 1536, 256, 128, 128 )
 71/tile_mode = 0
 71/occluder_offset = Vector2( 64, 64 )
 71/navigation_offset = Vector2( 64, 64 )
@@ -1203,11 +1203,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 71/z_index = 0
-72/name = "Sm_Coin2"
+72/name = "Sm_Block"
 72/texture = ExtResource( 1 )
 72/tex_offset = Vector2( 0, 0 )
 72/modulate = Color( 1, 1, 1, 1 )
-72/region = Rect2( 3072, 256, 128, 128 )
+72/region = Rect2( 2048, 256, 128, 128 )
 72/tile_mode = 0
 72/occluder_offset = Vector2( 64, 64 )
 72/navigation_offset = Vector2( 64, 64 )
@@ -1219,11 +1219,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 72/z_index = 0
-73/name = "Sm_Coin3"
+73/name = "Sm_Horiz1"
 73/texture = ExtResource( 1 )
 73/tex_offset = Vector2( 0, 0 )
 73/modulate = Color( 1, 1, 1, 1 )
-73/region = Rect2( 3200, 256, 128, 128 )
+73/region = Rect2( 2176, 256, 128, 128 )
 73/tile_mode = 0
 73/occluder_offset = Vector2( 64, 64 )
 73/navigation_offset = Vector2( 64, 64 )
@@ -1235,11 +1235,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 73/z_index = 0
-74/name = "Sm_Coin4"
+74/name = "Sm_Horiz2"
 74/texture = ExtResource( 1 )
 74/tex_offset = Vector2( 0, 0 )
 74/modulate = Color( 1, 1, 1, 1 )
-74/region = Rect2( 3328, 256, 128, 128 )
+74/region = Rect2( 2304, 256, 128, 128 )
 74/tile_mode = 0
 74/occluder_offset = Vector2( 64, 64 )
 74/navigation_offset = Vector2( 64, 64 )
@@ -1251,11 +1251,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 74/z_index = 0
-75/name = "Sm_Edge1"
+75/name = "Sm_Horiz3"
 75/texture = ExtResource( 1 )
 75/tex_offset = Vector2( 0, 0 )
 75/modulate = Color( 1, 1, 1, 1 )
-75/region = Rect2( 3456, 256, 128, 128 )
+75/region = Rect2( 2432, 256, 128, 128 )
 75/tile_mode = 0
 75/occluder_offset = Vector2( 64, 64 )
 75/navigation_offset = Vector2( 64, 64 )
@@ -1267,11 +1267,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 75/z_index = 0
-76/name = "Sm_Edge2"
+76/name = "Sm_Vertic1"
 76/texture = ExtResource( 1 )
 76/tex_offset = Vector2( 0, 0 )
 76/modulate = Color( 1, 1, 1, 1 )
-76/region = Rect2( 3584, 256, 128, 128 )
+76/region = Rect2( 2560, 256, 128, 128 )
 76/tile_mode = 0
 76/occluder_offset = Vector2( 64, 64 )
 76/navigation_offset = Vector2( 64, 64 )
@@ -1283,11 +1283,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 76/z_index = 0
-77/name = "Sm_Edge3"
+77/name = "Sm_Vertic2"
 77/texture = ExtResource( 1 )
 77/tex_offset = Vector2( 0, 0 )
 77/modulate = Color( 1, 1, 1, 1 )
-77/region = Rect2( 3712, 256, 128, 128 )
+77/region = Rect2( 2688, 256, 128, 128 )
 77/tile_mode = 0
 77/occluder_offset = Vector2( 64, 64 )
 77/navigation_offset = Vector2( 64, 64 )
@@ -1299,11 +1299,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 77/z_index = 0
-78/name = "Sm_Edge4"
+78/name = "Sm_Vertic3"
 78/texture = ExtResource( 1 )
 78/tex_offset = Vector2( 0, 0 )
 78/modulate = Color( 1, 1, 1, 1 )
-78/region = Rect2( 3840, 256, 128, 128 )
+78/region = Rect2( 2816, 256, 128, 128 )
 78/tile_mode = 0
 78/occluder_offset = Vector2( 64, 64 )
 78/navigation_offset = Vector2( 64, 64 )
@@ -1315,11 +1315,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 78/z_index = 0
-79/name = "Fa_BottomFancy1"
+79/name = "Sm_Coin1"
 79/texture = ExtResource( 1 )
 79/tex_offset = Vector2( 0, 0 )
 79/modulate = Color( 1, 1, 1, 1 )
-79/region = Rect2( 0, 384, 128, 128 )
+79/region = Rect2( 2944, 256, 128, 128 )
 79/tile_mode = 0
 79/occluder_offset = Vector2( 64, 64 )
 79/navigation_offset = Vector2( 64, 64 )
@@ -1331,11 +1331,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 79/z_index = 0
-80/name = "Fa_BottomFancy2"
+80/name = "Sm_Coin2"
 80/texture = ExtResource( 1 )
 80/tex_offset = Vector2( 0, 0 )
 80/modulate = Color( 1, 1, 1, 1 )
-80/region = Rect2( 128, 384, 128, 128 )
+80/region = Rect2( 3072, 256, 128, 128 )
 80/tile_mode = 0
 80/occluder_offset = Vector2( 64, 64 )
 80/navigation_offset = Vector2( 64, 64 )
@@ -1347,11 +1347,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 80/z_index = 0
-81/name = "Fa_BottomFancy3"
+81/name = "Sm_Coin3"
 81/texture = ExtResource( 1 )
 81/tex_offset = Vector2( 0, 0 )
 81/modulate = Color( 1, 1, 1, 1 )
-81/region = Rect2( 256, 384, 128, 128 )
+81/region = Rect2( 3200, 256, 128, 128 )
 81/tile_mode = 0
 81/occluder_offset = Vector2( 64, 64 )
 81/navigation_offset = Vector2( 64, 64 )
@@ -1363,11 +1363,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 81/z_index = 0
-82/name = "Fa_BottomFancy4"
+82/name = "Sm_Coin4"
 82/texture = ExtResource( 1 )
 82/tex_offset = Vector2( 0, 0 )
 82/modulate = Color( 1, 1, 1, 1 )
-82/region = Rect2( 384, 384, 128, 128 )
+82/region = Rect2( 3328, 256, 128, 128 )
 82/tile_mode = 0
 82/occluder_offset = Vector2( 64, 64 )
 82/navigation_offset = Vector2( 64, 64 )
@@ -1379,11 +1379,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 82/z_index = 0
-83/name = "Fa_TopFancy1"
+83/name = "Sm_Edge1"
 83/texture = ExtResource( 1 )
 83/tex_offset = Vector2( 0, 0 )
 83/modulate = Color( 1, 1, 1, 1 )
-83/region = Rect2( 896, 384, 128, 128 )
+83/region = Rect2( 3456, 256, 128, 128 )
 83/tile_mode = 0
 83/occluder_offset = Vector2( 64, 64 )
 83/navigation_offset = Vector2( 64, 64 )
@@ -1395,11 +1395,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 83/z_index = 0
-84/name = "Fa_TopFancy2"
+84/name = "Sm_Edge2"
 84/texture = ExtResource( 1 )
 84/tex_offset = Vector2( 0, 0 )
 84/modulate = Color( 1, 1, 1, 1 )
-84/region = Rect2( 768, 384, 128, 128 )
+84/region = Rect2( 3584, 256, 128, 128 )
 84/tile_mode = 0
 84/occluder_offset = Vector2( 64, 64 )
 84/navigation_offset = Vector2( 64, 64 )
@@ -1411,11 +1411,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 84/z_index = 0
-85/name = "Fa_TopFancy3"
+85/name = "Sm_Edge3"
 85/texture = ExtResource( 1 )
 85/tex_offset = Vector2( 0, 0 )
 85/modulate = Color( 1, 1, 1, 1 )
-85/region = Rect2( 640, 384, 128, 128 )
+85/region = Rect2( 3712, 256, 128, 128 )
 85/tile_mode = 0
 85/occluder_offset = Vector2( 64, 64 )
 85/navigation_offset = Vector2( 64, 64 )
@@ -1427,11 +1427,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 85/z_index = 0
-86/name = "Fa_TopFancy4"
+86/name = "Sm_Edge4"
 86/texture = ExtResource( 1 )
 86/tex_offset = Vector2( 0, 0 )
 86/modulate = Color( 1, 1, 1, 1 )
-86/region = Rect2( 512, 384, 128, 128 )
+86/region = Rect2( 3840, 256, 128, 128 )
 86/tile_mode = 0
 86/occluder_offset = Vector2( 64, 64 )
 86/navigation_offset = Vector2( 64, 64 )
@@ -1443,11 +1443,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 86/z_index = 0
-87/name = "Fa_LeftFancy1"
+87/name = "Sm_L1"
 87/texture = ExtResource( 1 )
 87/tex_offset = Vector2( 0, 0 )
 87/modulate = Color( 1, 1, 1, 1 )
-87/region = Rect2( 1024, 384, 128, 128 )
+87/region = Rect2( 3968, 256, 128, 128 )
 87/tile_mode = 0
 87/occluder_offset = Vector2( 64, 64 )
 87/navigation_offset = Vector2( 64, 64 )
@@ -1459,11 +1459,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 87/z_index = 0
-88/name = "Fa_LeftFancy2"
+88/name = "Sm_L2"
 88/texture = ExtResource( 1 )
 88/tex_offset = Vector2( 0, 0 )
 88/modulate = Color( 1, 1, 1, 1 )
-88/region = Rect2( 1152, 384, 128, 128 )
+88/region = Rect2( 4096, 256, 128, 128 )
 88/tile_mode = 0
 88/occluder_offset = Vector2( 64, 64 )
 88/navigation_offset = Vector2( 64, 64 )
@@ -1475,11 +1475,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 88/z_index = 0
-89/name = "Fa_LeftFancy3"
+89/name = "Sm_L3"
 89/texture = ExtResource( 1 )
 89/tex_offset = Vector2( 0, 0 )
 89/modulate = Color( 1, 1, 1, 1 )
-89/region = Rect2( 1280, 384, 128, 128 )
+89/region = Rect2( 4224, 256, 128, 128 )
 89/tile_mode = 0
 89/occluder_offset = Vector2( 64, 64 )
 89/navigation_offset = Vector2( 64, 64 )
@@ -1491,11 +1491,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 89/z_index = 0
-90/name = "Fa_LeftFancy4"
+90/name = "Sm_L4"
 90/texture = ExtResource( 1 )
 90/tex_offset = Vector2( 0, 0 )
 90/modulate = Color( 1, 1, 1, 1 )
-90/region = Rect2( 1408, 384, 128, 128 )
+90/region = Rect2( 4352, 256, 128, 128 )
 90/tile_mode = 0
 90/occluder_offset = Vector2( 64, 64 )
 90/navigation_offset = Vector2( 64, 64 )
@@ -1507,11 +1507,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 90/z_index = 0
-91/name = "Fa_RightFancy1"
+91/name = "Sm_Nudge1"
 91/texture = ExtResource( 1 )
 91/tex_offset = Vector2( 0, 0 )
 91/modulate = Color( 1, 1, 1, 1 )
-91/region = Rect2( 1920, 384, 128, 128 )
+91/region = Rect2( 4480, 256, 128, 128 )
 91/tile_mode = 0
 91/occluder_offset = Vector2( 64, 64 )
 91/navigation_offset = Vector2( 64, 64 )
@@ -1523,11 +1523,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 91/z_index = 0
-92/name = "Fa_RightFancy2"
+92/name = "Sm_Nudge2"
 92/texture = ExtResource( 1 )
 92/tex_offset = Vector2( 0, 0 )
 92/modulate = Color( 1, 1, 1, 1 )
-92/region = Rect2( 1792, 384, 128, 128 )
+92/region = Rect2( 4608, 256, 128, 128 )
 92/tile_mode = 0
 92/occluder_offset = Vector2( 64, 64 )
 92/navigation_offset = Vector2( 64, 64 )
@@ -1539,11 +1539,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 92/z_index = 0
-93/name = "Fa_RightFancy3"
+93/name = "Sm_Nudge3"
 93/texture = ExtResource( 1 )
 93/tex_offset = Vector2( 0, 0 )
 93/modulate = Color( 1, 1, 1, 1 )
-93/region = Rect2( 1664, 384, 128, 128 )
+93/region = Rect2( 4736, 256, 128, 128 )
 93/tile_mode = 0
 93/occluder_offset = Vector2( 64, 64 )
 93/navigation_offset = Vector2( 64, 64 )
@@ -1555,11 +1555,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 93/z_index = 0
-94/name = "Fa_RightFancy4"
+94/name = "Sm_Nudge4"
 94/texture = ExtResource( 1 )
 94/tex_offset = Vector2( 0, 0 )
 94/modulate = Color( 1, 1, 1, 1 )
-94/region = Rect2( 1536, 384, 128, 128 )
+94/region = Rect2( 4864, 256, 128, 128 )
 94/tile_mode = 0
 94/occluder_offset = Vector2( 64, 64 )
 94/navigation_offset = Vector2( 64, 64 )
@@ -1571,11 +1571,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 94/z_index = 0
-95/name = "Fa_Block"
+95/name = "Fa_BottomFancy1"
 95/texture = ExtResource( 1 )
 95/tex_offset = Vector2( 0, 0 )
 95/modulate = Color( 1, 1, 1, 1 )
-95/region = Rect2( 2048, 384, 128, 128 )
+95/region = Rect2( 0, 384, 128, 128 )
 95/tile_mode = 0
 95/occluder_offset = Vector2( 64, 64 )
 95/navigation_offset = Vector2( 64, 64 )
@@ -1587,11 +1587,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 95/z_index = 0
-96/name = "Fa_Horiz1"
+96/name = "Fa_BottomFancy2"
 96/texture = ExtResource( 1 )
 96/tex_offset = Vector2( 0, 0 )
 96/modulate = Color( 1, 1, 1, 1 )
-96/region = Rect2( 2176, 384, 128, 128 )
+96/region = Rect2( 128, 384, 128, 128 )
 96/tile_mode = 0
 96/occluder_offset = Vector2( 64, 64 )
 96/navigation_offset = Vector2( 64, 64 )
@@ -1603,11 +1603,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 96/z_index = 0
-97/name = "Fa_Horiz2"
+97/name = "Fa_BottomFancy3"
 97/texture = ExtResource( 1 )
 97/tex_offset = Vector2( 0, 0 )
 97/modulate = Color( 1, 1, 1, 1 )
-97/region = Rect2( 2304, 384, 128, 128 )
+97/region = Rect2( 256, 384, 128, 128 )
 97/tile_mode = 0
 97/occluder_offset = Vector2( 64, 64 )
 97/navigation_offset = Vector2( 64, 64 )
@@ -1619,11 +1619,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 97/z_index = 0
-98/name = "Fa_Horiz3"
+98/name = "Fa_BottomFancy4"
 98/texture = ExtResource( 1 )
 98/tex_offset = Vector2( 0, 0 )
 98/modulate = Color( 1, 1, 1, 1 )
-98/region = Rect2( 2432, 384, 128, 128 )
+98/region = Rect2( 384, 384, 128, 128 )
 98/tile_mode = 0
 98/occluder_offset = Vector2( 64, 64 )
 98/navigation_offset = Vector2( 64, 64 )
@@ -1635,11 +1635,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 98/z_index = 0
-99/name = "Fa_Vertic1"
+99/name = "Fa_TopFancy1"
 99/texture = ExtResource( 1 )
 99/tex_offset = Vector2( 0, 0 )
 99/modulate = Color( 1, 1, 1, 1 )
-99/region = Rect2( 2560, 384, 128, 128 )
+99/region = Rect2( 896, 384, 128, 128 )
 99/tile_mode = 0
 99/occluder_offset = Vector2( 64, 64 )
 99/navigation_offset = Vector2( 64, 64 )
@@ -1651,11 +1651,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 99/z_index = 0
-100/name = "Fa_Vertic2"
+100/name = "Fa_TopFancy2"
 100/texture = ExtResource( 1 )
 100/tex_offset = Vector2( 0, 0 )
 100/modulate = Color( 1, 1, 1, 1 )
-100/region = Rect2( 2688, 384, 128, 128 )
+100/region = Rect2( 768, 384, 128, 128 )
 100/tile_mode = 0
 100/occluder_offset = Vector2( 64, 64 )
 100/navigation_offset = Vector2( 64, 64 )
@@ -1667,11 +1667,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 100/z_index = 0
-101/name = "Fa_Vertic3"
+101/name = "Fa_TopFancy3"
 101/texture = ExtResource( 1 )
 101/tex_offset = Vector2( 0, 0 )
 101/modulate = Color( 1, 1, 1, 1 )
-101/region = Rect2( 2816, 384, 128, 128 )
+101/region = Rect2( 640, 384, 128, 128 )
 101/tile_mode = 0
 101/occluder_offset = Vector2( 64, 64 )
 101/navigation_offset = Vector2( 64, 64 )
@@ -1683,11 +1683,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 101/z_index = 0
-102/name = "Fa_Coin1"
+102/name = "Fa_TopFancy4"
 102/texture = ExtResource( 1 )
 102/tex_offset = Vector2( 0, 0 )
 102/modulate = Color( 1, 1, 1, 1 )
-102/region = Rect2( 2944, 384, 128, 128 )
+102/region = Rect2( 512, 384, 128, 128 )
 102/tile_mode = 0
 102/occluder_offset = Vector2( 64, 64 )
 102/navigation_offset = Vector2( 64, 64 )
@@ -1699,11 +1699,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 102/z_index = 0
-103/name = "Fa_Coin2"
+103/name = "Fa_LeftFancy1"
 103/texture = ExtResource( 1 )
 103/tex_offset = Vector2( 0, 0 )
 103/modulate = Color( 1, 1, 1, 1 )
-103/region = Rect2( 3072, 384, 128, 128 )
+103/region = Rect2( 1024, 384, 128, 128 )
 103/tile_mode = 0
 103/occluder_offset = Vector2( 64, 64 )
 103/navigation_offset = Vector2( 64, 64 )
@@ -1715,11 +1715,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 103/z_index = 0
-104/name = "Fa_Coin3"
+104/name = "Fa_LeftFancy2"
 104/texture = ExtResource( 1 )
 104/tex_offset = Vector2( 0, 0 )
 104/modulate = Color( 1, 1, 1, 1 )
-104/region = Rect2( 3200, 384, 128, 128 )
+104/region = Rect2( 1152, 384, 128, 128 )
 104/tile_mode = 0
 104/occluder_offset = Vector2( 64, 64 )
 104/navigation_offset = Vector2( 64, 64 )
@@ -1731,11 +1731,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 104/z_index = 0
-105/name = "Fa_Coin4"
+105/name = "Fa_LeftFancy3"
 105/texture = ExtResource( 1 )
 105/tex_offset = Vector2( 0, 0 )
 105/modulate = Color( 1, 1, 1, 1 )
-105/region = Rect2( 3328, 384, 128, 128 )
+105/region = Rect2( 1280, 384, 128, 128 )
 105/tile_mode = 0
 105/occluder_offset = Vector2( 64, 64 )
 105/navigation_offset = Vector2( 64, 64 )
@@ -1747,11 +1747,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 105/z_index = 0
-106/name = "Fa_Edge1"
+106/name = "Fa_LeftFancy4"
 106/texture = ExtResource( 1 )
 106/tex_offset = Vector2( 0, 0 )
 106/modulate = Color( 1, 1, 1, 1 )
-106/region = Rect2( 3456, 384, 128, 128 )
+106/region = Rect2( 1408, 384, 128, 128 )
 106/tile_mode = 0
 106/occluder_offset = Vector2( 64, 64 )
 106/navigation_offset = Vector2( 64, 64 )
@@ -1763,11 +1763,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 106/z_index = 0
-107/name = "Fa_Edge2"
+107/name = "Fa_RightFancy1"
 107/texture = ExtResource( 1 )
 107/tex_offset = Vector2( 0, 0 )
 107/modulate = Color( 1, 1, 1, 1 )
-107/region = Rect2( 3584, 384, 128, 128 )
+107/region = Rect2( 1920, 384, 128, 128 )
 107/tile_mode = 0
 107/occluder_offset = Vector2( 64, 64 )
 107/navigation_offset = Vector2( 64, 64 )
@@ -1779,11 +1779,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 107/z_index = 0
-108/name = "Fa_Edge3"
+108/name = "Fa_RightFancy2"
 108/texture = ExtResource( 1 )
 108/tex_offset = Vector2( 0, 0 )
 108/modulate = Color( 1, 1, 1, 1 )
-108/region = Rect2( 3712, 384, 128, 128 )
+108/region = Rect2( 1792, 384, 128, 128 )
 108/tile_mode = 0
 108/occluder_offset = Vector2( 64, 64 )
 108/navigation_offset = Vector2( 64, 64 )
@@ -1795,11 +1795,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 108/z_index = 0
-109/name = "Fa_Edge4"
+109/name = "Fa_RightFancy3"
 109/texture = ExtResource( 1 )
 109/tex_offset = Vector2( 0, 0 )
 109/modulate = Color( 1, 1, 1, 1 )
-109/region = Rect2( 3840, 384, 128, 128 )
+109/region = Rect2( 1664, 384, 128, 128 )
 109/tile_mode = 0
 109/occluder_offset = Vector2( 64, 64 )
 109/navigation_offset = Vector2( 64, 64 )
@@ -1811,11 +1811,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 109/z_index = 0
-110/name = "Wr_BottomFancy1"
+110/name = "Fa_RightFancy4"
 110/texture = ExtResource( 1 )
 110/tex_offset = Vector2( 0, 0 )
 110/modulate = Color( 1, 1, 1, 1 )
-110/region = Rect2( 0, 512, 128, 128 )
+110/region = Rect2( 1536, 384, 128, 128 )
 110/tile_mode = 0
 110/occluder_offset = Vector2( 64, 64 )
 110/navigation_offset = Vector2( 64, 64 )
@@ -1827,11 +1827,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 110/z_index = 0
-111/name = "Wr_BottomFancy2"
+111/name = "Fa_Block"
 111/texture = ExtResource( 1 )
 111/tex_offset = Vector2( 0, 0 )
 111/modulate = Color( 1, 1, 1, 1 )
-111/region = Rect2( 128, 512, 128, 128 )
+111/region = Rect2( 2048, 384, 128, 128 )
 111/tile_mode = 0
 111/occluder_offset = Vector2( 64, 64 )
 111/navigation_offset = Vector2( 64, 64 )
@@ -1843,11 +1843,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 111/z_index = 0
-112/name = "Wr_BottomFancy3"
+112/name = "Fa_Horiz1"
 112/texture = ExtResource( 1 )
 112/tex_offset = Vector2( 0, 0 )
 112/modulate = Color( 1, 1, 1, 1 )
-112/region = Rect2( 256, 512, 128, 128 )
+112/region = Rect2( 2176, 384, 128, 128 )
 112/tile_mode = 0
 112/occluder_offset = Vector2( 64, 64 )
 112/navigation_offset = Vector2( 64, 64 )
@@ -1859,11 +1859,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 112/z_index = 0
-113/name = "Wr_BottomFancy4"
+113/name = "Fa_Horiz2"
 113/texture = ExtResource( 1 )
 113/tex_offset = Vector2( 0, 0 )
 113/modulate = Color( 1, 1, 1, 1 )
-113/region = Rect2( 384, 512, 128, 128 )
+113/region = Rect2( 2304, 384, 128, 128 )
 113/tile_mode = 0
 113/occluder_offset = Vector2( 64, 64 )
 113/navigation_offset = Vector2( 64, 64 )
@@ -1875,11 +1875,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 113/z_index = 0
-114/name = "Wr_TopFancy1"
+114/name = "Fa_Horiz3"
 114/texture = ExtResource( 1 )
 114/tex_offset = Vector2( 0, 0 )
 114/modulate = Color( 1, 1, 1, 1 )
-114/region = Rect2( 896, 512, 128, 128 )
+114/region = Rect2( 2432, 384, 128, 128 )
 114/tile_mode = 0
 114/occluder_offset = Vector2( 64, 64 )
 114/navigation_offset = Vector2( 64, 64 )
@@ -1891,11 +1891,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 114/z_index = 0
-115/name = "Wr_TopFancy2"
+115/name = "Fa_Vertic1"
 115/texture = ExtResource( 1 )
 115/tex_offset = Vector2( 0, 0 )
 115/modulate = Color( 1, 1, 1, 1 )
-115/region = Rect2( 768, 512, 128, 128 )
+115/region = Rect2( 2560, 384, 128, 128 )
 115/tile_mode = 0
 115/occluder_offset = Vector2( 64, 64 )
 115/navigation_offset = Vector2( 64, 64 )
@@ -1907,11 +1907,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 115/z_index = 0
-116/name = "Wr_TopFancy3"
+116/name = "Fa_Vertic2"
 116/texture = ExtResource( 1 )
 116/tex_offset = Vector2( 0, 0 )
 116/modulate = Color( 1, 1, 1, 1 )
-116/region = Rect2( 640, 512, 128, 128 )
+116/region = Rect2( 2688, 384, 128, 128 )
 116/tile_mode = 0
 116/occluder_offset = Vector2( 64, 64 )
 116/navigation_offset = Vector2( 64, 64 )
@@ -1923,11 +1923,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 116/z_index = 0
-117/name = "Wr_TopFancy4"
+117/name = "Fa_Vertic3"
 117/texture = ExtResource( 1 )
 117/tex_offset = Vector2( 0, 0 )
 117/modulate = Color( 1, 1, 1, 1 )
-117/region = Rect2( 512, 512, 128, 128 )
+117/region = Rect2( 2816, 384, 128, 128 )
 117/tile_mode = 0
 117/occluder_offset = Vector2( 64, 64 )
 117/navigation_offset = Vector2( 64, 64 )
@@ -1939,11 +1939,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 117/z_index = 0
-118/name = "Wr_LeftFancy1"
+118/name = "Fa_Coin1"
 118/texture = ExtResource( 1 )
 118/tex_offset = Vector2( 0, 0 )
 118/modulate = Color( 1, 1, 1, 1 )
-118/region = Rect2( 1024, 512, 128, 128 )
+118/region = Rect2( 2944, 384, 128, 128 )
 118/tile_mode = 0
 118/occluder_offset = Vector2( 64, 64 )
 118/navigation_offset = Vector2( 64, 64 )
@@ -1955,11 +1955,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 118/z_index = 0
-119/name = "Wr_LeftFancy2"
+119/name = "Fa_Coin2"
 119/texture = ExtResource( 1 )
 119/tex_offset = Vector2( 0, 0 )
 119/modulate = Color( 1, 1, 1, 1 )
-119/region = Rect2( 1152, 512, 128, 128 )
+119/region = Rect2( 3072, 384, 128, 128 )
 119/tile_mode = 0
 119/occluder_offset = Vector2( 64, 64 )
 119/navigation_offset = Vector2( 64, 64 )
@@ -1971,11 +1971,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 119/z_index = 0
-120/name = "Wr_LeftFancy3"
+120/name = "Fa_Coin3"
 120/texture = ExtResource( 1 )
 120/tex_offset = Vector2( 0, 0 )
 120/modulate = Color( 1, 1, 1, 1 )
-120/region = Rect2( 1280, 512, 128, 128 )
+120/region = Rect2( 3200, 384, 128, 128 )
 120/tile_mode = 0
 120/occluder_offset = Vector2( 64, 64 )
 120/navigation_offset = Vector2( 64, 64 )
@@ -1987,11 +1987,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 120/z_index = 0
-121/name = "Wr_LeftFancy4"
+121/name = "Fa_Coin4"
 121/texture = ExtResource( 1 )
 121/tex_offset = Vector2( 0, 0 )
 121/modulate = Color( 1, 1, 1, 1 )
-121/region = Rect2( 1408, 512, 128, 128 )
+121/region = Rect2( 3328, 384, 128, 128 )
 121/tile_mode = 0
 121/occluder_offset = Vector2( 64, 64 )
 121/navigation_offset = Vector2( 64, 64 )
@@ -2003,11 +2003,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 121/z_index = 0
-122/name = "Wr_RightFancy1"
+122/name = "Fa_Edge1"
 122/texture = ExtResource( 1 )
 122/tex_offset = Vector2( 0, 0 )
 122/modulate = Color( 1, 1, 1, 1 )
-122/region = Rect2( 1920, 512, 128, 128 )
+122/region = Rect2( 3456, 384, 128, 128 )
 122/tile_mode = 0
 122/occluder_offset = Vector2( 64, 64 )
 122/navigation_offset = Vector2( 64, 64 )
@@ -2019,11 +2019,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 122/z_index = 0
-123/name = "Wr_RightFancy2"
+123/name = "Fa_Edge2"
 123/texture = ExtResource( 1 )
 123/tex_offset = Vector2( 0, 0 )
 123/modulate = Color( 1, 1, 1, 1 )
-123/region = Rect2( 1792, 512, 128, 128 )
+123/region = Rect2( 3584, 384, 128, 128 )
 123/tile_mode = 0
 123/occluder_offset = Vector2( 64, 64 )
 123/navigation_offset = Vector2( 64, 64 )
@@ -2035,11 +2035,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 123/z_index = 0
-124/name = "Wr_RightFancy3"
+124/name = "Fa_Edge3"
 124/texture = ExtResource( 1 )
 124/tex_offset = Vector2( 0, 0 )
 124/modulate = Color( 1, 1, 1, 1 )
-124/region = Rect2( 1664, 512, 128, 128 )
+124/region = Rect2( 3712, 384, 128, 128 )
 124/tile_mode = 0
 124/occluder_offset = Vector2( 64, 64 )
 124/navigation_offset = Vector2( 64, 64 )
@@ -2051,11 +2051,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 124/z_index = 0
-125/name = "Wr_RightFancy4"
+125/name = "Fa_Edge4"
 125/texture = ExtResource( 1 )
 125/tex_offset = Vector2( 0, 0 )
 125/modulate = Color( 1, 1, 1, 1 )
-125/region = Rect2( 1536, 512, 128, 128 )
+125/region = Rect2( 3840, 384, 128, 128 )
 125/tile_mode = 0
 125/occluder_offset = Vector2( 64, 64 )
 125/navigation_offset = Vector2( 64, 64 )
@@ -2067,11 +2067,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 125/z_index = 0
-126/name = "Wr_Block"
+126/name = "Fa_L1"
 126/texture = ExtResource( 1 )
 126/tex_offset = Vector2( 0, 0 )
 126/modulate = Color( 1, 1, 1, 1 )
-126/region = Rect2( 2048, 512, 128, 128 )
+126/region = Rect2( 3968, 384, 128, 128 )
 126/tile_mode = 0
 126/occluder_offset = Vector2( 64, 64 )
 126/navigation_offset = Vector2( 64, 64 )
@@ -2083,11 +2083,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 126/z_index = 0
-127/name = "Wr_Horiz1"
+127/name = "Fa_L2"
 127/texture = ExtResource( 1 )
 127/tex_offset = Vector2( 0, 0 )
 127/modulate = Color( 1, 1, 1, 1 )
-127/region = Rect2( 2176, 512, 128, 128 )
+127/region = Rect2( 4096, 384, 128, 128 )
 127/tile_mode = 0
 127/occluder_offset = Vector2( 64, 64 )
 127/navigation_offset = Vector2( 64, 64 )
@@ -2099,11 +2099,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 127/z_index = 0
-128/name = "Wr_Horiz2"
+128/name = "Fa_L3"
 128/texture = ExtResource( 1 )
 128/tex_offset = Vector2( 0, 0 )
 128/modulate = Color( 1, 1, 1, 1 )
-128/region = Rect2( 2304, 512, 128, 128 )
+128/region = Rect2( 4224, 384, 128, 128 )
 128/tile_mode = 0
 128/occluder_offset = Vector2( 64, 64 )
 128/navigation_offset = Vector2( 64, 64 )
@@ -2115,11 +2115,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 128/z_index = 0
-129/name = "Wr_Horiz3"
+129/name = "Fa_L4"
 129/texture = ExtResource( 1 )
 129/tex_offset = Vector2( 0, 0 )
 129/modulate = Color( 1, 1, 1, 1 )
-129/region = Rect2( 2432, 512, 128, 128 )
+129/region = Rect2( 4352, 384, 128, 128 )
 129/tile_mode = 0
 129/occluder_offset = Vector2( 64, 64 )
 129/navigation_offset = Vector2( 64, 64 )
@@ -2131,11 +2131,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 129/z_index = 0
-130/name = "Wr_Vertic1"
+130/name = "Fa_Nudge1"
 130/texture = ExtResource( 1 )
 130/tex_offset = Vector2( 0, 0 )
 130/modulate = Color( 1, 1, 1, 1 )
-130/region = Rect2( 2560, 512, 128, 128 )
+130/region = Rect2( 4480, 384, 128, 128 )
 130/tile_mode = 0
 130/occluder_offset = Vector2( 64, 64 )
 130/navigation_offset = Vector2( 64, 64 )
@@ -2147,11 +2147,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 130/z_index = 0
-131/name = "Wr_Vertic2"
+131/name = "Fa_Nudge2"
 131/texture = ExtResource( 1 )
 131/tex_offset = Vector2( 0, 0 )
 131/modulate = Color( 1, 1, 1, 1 )
-131/region = Rect2( 2688, 512, 128, 128 )
+131/region = Rect2( 4608, 384, 128, 128 )
 131/tile_mode = 0
 131/occluder_offset = Vector2( 64, 64 )
 131/navigation_offset = Vector2( 64, 64 )
@@ -2163,11 +2163,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 131/z_index = 0
-132/name = "Wr_Vertic3"
+132/name = "Fa_Nudge3"
 132/texture = ExtResource( 1 )
 132/tex_offset = Vector2( 0, 0 )
 132/modulate = Color( 1, 1, 1, 1 )
-132/region = Rect2( 2816, 512, 128, 128 )
+132/region = Rect2( 4736, 384, 128, 128 )
 132/tile_mode = 0
 132/occluder_offset = Vector2( 64, 64 )
 132/navigation_offset = Vector2( 64, 64 )
@@ -2179,11 +2179,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 132/z_index = 0
-133/name = "Wr_Coin1"
+133/name = "Fa_Nudge4"
 133/texture = ExtResource( 1 )
 133/tex_offset = Vector2( 0, 0 )
 133/modulate = Color( 1, 1, 1, 1 )
-133/region = Rect2( 2944, 512, 128, 128 )
+133/region = Rect2( 4864, 384, 128, 128 )
 133/tile_mode = 0
 133/occluder_offset = Vector2( 64, 64 )
 133/navigation_offset = Vector2( 64, 64 )
@@ -2195,11 +2195,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 133/z_index = 0
-134/name = "Wr_Coin2"
+134/name = "Wr_BottomFancy1"
 134/texture = ExtResource( 1 )
 134/tex_offset = Vector2( 0, 0 )
 134/modulate = Color( 1, 1, 1, 1 )
-134/region = Rect2( 3072, 512, 128, 128 )
+134/region = Rect2( 0, 512, 128, 128 )
 134/tile_mode = 0
 134/occluder_offset = Vector2( 64, 64 )
 134/navigation_offset = Vector2( 64, 64 )
@@ -2211,11 +2211,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 134/z_index = 0
-135/name = "Wr_Coin3"
+135/name = "Wr_BottomFancy2"
 135/texture = ExtResource( 1 )
 135/tex_offset = Vector2( 0, 0 )
 135/modulate = Color( 1, 1, 1, 1 )
-135/region = Rect2( 3200, 512, 128, 128 )
+135/region = Rect2( 128, 512, 128, 128 )
 135/tile_mode = 0
 135/occluder_offset = Vector2( 64, 64 )
 135/navigation_offset = Vector2( 64, 64 )
@@ -2227,11 +2227,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 135/z_index = 0
-136/name = "Wr_Coin4"
+136/name = "Wr_BottomFancy3"
 136/texture = ExtResource( 1 )
 136/tex_offset = Vector2( 0, 0 )
 136/modulate = Color( 1, 1, 1, 1 )
-136/region = Rect2( 3328, 512, 128, 128 )
+136/region = Rect2( 256, 512, 128, 128 )
 136/tile_mode = 0
 136/occluder_offset = Vector2( 64, 64 )
 136/navigation_offset = Vector2( 64, 64 )
@@ -2243,11 +2243,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 136/z_index = 0
-137/name = "Wr_Edge1"
+137/name = "Wr_BottomFancy4"
 137/texture = ExtResource( 1 )
 137/tex_offset = Vector2( 0, 0 )
 137/modulate = Color( 1, 1, 1, 1 )
-137/region = Rect2( 3456, 512, 128, 128 )
+137/region = Rect2( 384, 512, 128, 128 )
 137/tile_mode = 0
 137/occluder_offset = Vector2( 64, 64 )
 137/navigation_offset = Vector2( 64, 64 )
@@ -2259,11 +2259,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 137/z_index = 0
-138/name = "Wr_Edge2"
+138/name = "Wr_TopFancy1"
 138/texture = ExtResource( 1 )
 138/tex_offset = Vector2( 0, 0 )
 138/modulate = Color( 1, 1, 1, 1 )
-138/region = Rect2( 3584, 512, 128, 128 )
+138/region = Rect2( 896, 512, 128, 128 )
 138/tile_mode = 0
 138/occluder_offset = Vector2( 64, 64 )
 138/navigation_offset = Vector2( 64, 64 )
@@ -2275,11 +2275,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 138/z_index = 0
-139/name = "Wr_Edge3"
+139/name = "Wr_TopFancy2"
 139/texture = ExtResource( 1 )
 139/tex_offset = Vector2( 0, 0 )
 139/modulate = Color( 1, 1, 1, 1 )
-139/region = Rect2( 3712, 512, 128, 128 )
+139/region = Rect2( 768, 512, 128, 128 )
 139/tile_mode = 0
 139/occluder_offset = Vector2( 64, 64 )
 139/navigation_offset = Vector2( 64, 64 )
@@ -2291,11 +2291,11 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 139/z_index = 0
-140/name = "Wr_Edge4"
+140/name = "Wr_TopFancy3"
 140/texture = ExtResource( 1 )
 140/tex_offset = Vector2( 0, 0 )
 140/modulate = Color( 1, 1, 1, 1 )
-140/region = Rect2( 3840, 512, 128, 128 )
+140/region = Rect2( 640, 512, 128, 128 )
 140/tile_mode = 0
 140/occluder_offset = Vector2( 64, 64 )
 140/navigation_offset = Vector2( 64, 64 )
@@ -2307,4 +2307,516 @@ points = PoolVector2Array( 64, -64, 64, 64, -64, 64, -64, -64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 140/z_index = 0
+141/name = "Wr_TopFancy4"
+141/texture = ExtResource( 1 )
+141/tex_offset = Vector2( 0, 0 )
+141/modulate = Color( 1, 1, 1, 1 )
+141/region = Rect2( 512, 512, 128, 128 )
+141/tile_mode = 0
+141/occluder_offset = Vector2( 64, 64 )
+141/navigation_offset = Vector2( 64, 64 )
+141/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+141/z_index = 0
+142/name = "Wr_LeftFancy1"
+142/texture = ExtResource( 1 )
+142/tex_offset = Vector2( 0, 0 )
+142/modulate = Color( 1, 1, 1, 1 )
+142/region = Rect2( 1024, 512, 128, 128 )
+142/tile_mode = 0
+142/occluder_offset = Vector2( 64, 64 )
+142/navigation_offset = Vector2( 64, 64 )
+142/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+142/z_index = 0
+143/name = "Wr_LeftFancy2"
+143/texture = ExtResource( 1 )
+143/tex_offset = Vector2( 0, 0 )
+143/modulate = Color( 1, 1, 1, 1 )
+143/region = Rect2( 1152, 512, 128, 128 )
+143/tile_mode = 0
+143/occluder_offset = Vector2( 64, 64 )
+143/navigation_offset = Vector2( 64, 64 )
+143/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+143/z_index = 0
+144/name = "Wr_LeftFancy3"
+144/texture = ExtResource( 1 )
+144/tex_offset = Vector2( 0, 0 )
+144/modulate = Color( 1, 1, 1, 1 )
+144/region = Rect2( 1280, 512, 128, 128 )
+144/tile_mode = 0
+144/occluder_offset = Vector2( 64, 64 )
+144/navigation_offset = Vector2( 64, 64 )
+144/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+144/z_index = 0
+145/name = "Wr_LeftFancy4"
+145/texture = ExtResource( 1 )
+145/tex_offset = Vector2( 0, 0 )
+145/modulate = Color( 1, 1, 1, 1 )
+145/region = Rect2( 1408, 512, 128, 128 )
+145/tile_mode = 0
+145/occluder_offset = Vector2( 64, 64 )
+145/navigation_offset = Vector2( 64, 64 )
+145/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+145/z_index = 0
+146/name = "Wr_RightFancy1"
+146/texture = ExtResource( 1 )
+146/tex_offset = Vector2( 0, 0 )
+146/modulate = Color( 1, 1, 1, 1 )
+146/region = Rect2( 1920, 512, 128, 128 )
+146/tile_mode = 0
+146/occluder_offset = Vector2( 64, 64 )
+146/navigation_offset = Vector2( 64, 64 )
+146/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+146/z_index = 0
+147/name = "Wr_RightFancy2"
+147/texture = ExtResource( 1 )
+147/tex_offset = Vector2( 0, 0 )
+147/modulate = Color( 1, 1, 1, 1 )
+147/region = Rect2( 1792, 512, 128, 128 )
+147/tile_mode = 0
+147/occluder_offset = Vector2( 64, 64 )
+147/navigation_offset = Vector2( 64, 64 )
+147/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+147/z_index = 0
+148/name = "Wr_RightFancy3"
+148/texture = ExtResource( 1 )
+148/tex_offset = Vector2( 0, 0 )
+148/modulate = Color( 1, 1, 1, 1 )
+148/region = Rect2( 1664, 512, 128, 128 )
+148/tile_mode = 0
+148/occluder_offset = Vector2( 64, 64 )
+148/navigation_offset = Vector2( 64, 64 )
+148/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+148/z_index = 0
+149/name = "Wr_RightFancy4"
+149/texture = ExtResource( 1 )
+149/tex_offset = Vector2( 0, 0 )
+149/modulate = Color( 1, 1, 1, 1 )
+149/region = Rect2( 1536, 512, 128, 128 )
+149/tile_mode = 0
+149/occluder_offset = Vector2( 64, 64 )
+149/navigation_offset = Vector2( 64, 64 )
+149/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+149/z_index = 0
+150/name = "Wr_Block"
+150/texture = ExtResource( 1 )
+150/tex_offset = Vector2( 0, 0 )
+150/modulate = Color( 1, 1, 1, 1 )
+150/region = Rect2( 2048, 512, 128, 128 )
+150/tile_mode = 0
+150/occluder_offset = Vector2( 64, 64 )
+150/navigation_offset = Vector2( 64, 64 )
+150/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+150/z_index = 0
+151/name = "Wr_Horiz1"
+151/texture = ExtResource( 1 )
+151/tex_offset = Vector2( 0, 0 )
+151/modulate = Color( 1, 1, 1, 1 )
+151/region = Rect2( 2176, 512, 128, 128 )
+151/tile_mode = 0
+151/occluder_offset = Vector2( 64, 64 )
+151/navigation_offset = Vector2( 64, 64 )
+151/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+151/z_index = 0
+152/name = "Wr_Horiz2"
+152/texture = ExtResource( 1 )
+152/tex_offset = Vector2( 0, 0 )
+152/modulate = Color( 1, 1, 1, 1 )
+152/region = Rect2( 2304, 512, 128, 128 )
+152/tile_mode = 0
+152/occluder_offset = Vector2( 64, 64 )
+152/navigation_offset = Vector2( 64, 64 )
+152/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+152/z_index = 0
+153/name = "Wr_Horiz3"
+153/texture = ExtResource( 1 )
+153/tex_offset = Vector2( 0, 0 )
+153/modulate = Color( 1, 1, 1, 1 )
+153/region = Rect2( 2432, 512, 128, 128 )
+153/tile_mode = 0
+153/occluder_offset = Vector2( 64, 64 )
+153/navigation_offset = Vector2( 64, 64 )
+153/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+153/z_index = 0
+154/name = "Wr_Vertic1"
+154/texture = ExtResource( 1 )
+154/tex_offset = Vector2( 0, 0 )
+154/modulate = Color( 1, 1, 1, 1 )
+154/region = Rect2( 2560, 512, 128, 128 )
+154/tile_mode = 0
+154/occluder_offset = Vector2( 64, 64 )
+154/navigation_offset = Vector2( 64, 64 )
+154/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+154/z_index = 0
+155/name = "Wr_Vertic2"
+155/texture = ExtResource( 1 )
+155/tex_offset = Vector2( 0, 0 )
+155/modulate = Color( 1, 1, 1, 1 )
+155/region = Rect2( 2688, 512, 128, 128 )
+155/tile_mode = 0
+155/occluder_offset = Vector2( 64, 64 )
+155/navigation_offset = Vector2( 64, 64 )
+155/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+155/z_index = 0
+156/name = "Wr_Vertic3"
+156/texture = ExtResource( 1 )
+156/tex_offset = Vector2( 0, 0 )
+156/modulate = Color( 1, 1, 1, 1 )
+156/region = Rect2( 2816, 512, 128, 128 )
+156/tile_mode = 0
+156/occluder_offset = Vector2( 64, 64 )
+156/navigation_offset = Vector2( 64, 64 )
+156/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+156/z_index = 0
+157/name = "Wr_Coin1"
+157/texture = ExtResource( 1 )
+157/tex_offset = Vector2( 0, 0 )
+157/modulate = Color( 1, 1, 1, 1 )
+157/region = Rect2( 2944, 512, 128, 128 )
+157/tile_mode = 0
+157/occluder_offset = Vector2( 64, 64 )
+157/navigation_offset = Vector2( 64, 64 )
+157/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+157/z_index = 0
+158/name = "Wr_Coin2"
+158/texture = ExtResource( 1 )
+158/tex_offset = Vector2( 0, 0 )
+158/modulate = Color( 1, 1, 1, 1 )
+158/region = Rect2( 3072, 512, 128, 128 )
+158/tile_mode = 0
+158/occluder_offset = Vector2( 64, 64 )
+158/navigation_offset = Vector2( 64, 64 )
+158/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+158/z_index = 0
+159/name = "Wr_Coin3"
+159/texture = ExtResource( 1 )
+159/tex_offset = Vector2( 0, 0 )
+159/modulate = Color( 1, 1, 1, 1 )
+159/region = Rect2( 3200, 512, 128, 128 )
+159/tile_mode = 0
+159/occluder_offset = Vector2( 64, 64 )
+159/navigation_offset = Vector2( 64, 64 )
+159/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+159/z_index = 0
+160/name = "Wr_Coin4"
+160/texture = ExtResource( 1 )
+160/tex_offset = Vector2( 0, 0 )
+160/modulate = Color( 1, 1, 1, 1 )
+160/region = Rect2( 3328, 512, 128, 128 )
+160/tile_mode = 0
+160/occluder_offset = Vector2( 64, 64 )
+160/navigation_offset = Vector2( 64, 64 )
+160/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+160/z_index = 0
+161/name = "Wr_Edge1"
+161/texture = ExtResource( 1 )
+161/tex_offset = Vector2( 0, 0 )
+161/modulate = Color( 1, 1, 1, 1 )
+161/region = Rect2( 3456, 512, 128, 128 )
+161/tile_mode = 0
+161/occluder_offset = Vector2( 64, 64 )
+161/navigation_offset = Vector2( 64, 64 )
+161/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+161/z_index = 0
+162/name = "Wr_Edge2"
+162/texture = ExtResource( 1 )
+162/tex_offset = Vector2( 0, 0 )
+162/modulate = Color( 1, 1, 1, 1 )
+162/region = Rect2( 3584, 512, 128, 128 )
+162/tile_mode = 0
+162/occluder_offset = Vector2( 64, 64 )
+162/navigation_offset = Vector2( 64, 64 )
+162/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+162/z_index = 0
+163/name = "Wr_Edge3"
+163/texture = ExtResource( 1 )
+163/tex_offset = Vector2( 0, 0 )
+163/modulate = Color( 1, 1, 1, 1 )
+163/region = Rect2( 3712, 512, 128, 128 )
+163/tile_mode = 0
+163/occluder_offset = Vector2( 64, 64 )
+163/navigation_offset = Vector2( 64, 64 )
+163/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+163/z_index = 0
+164/name = "Wr_Edge4"
+164/texture = ExtResource( 1 )
+164/tex_offset = Vector2( 0, 0 )
+164/modulate = Color( 1, 1, 1, 1 )
+164/region = Rect2( 3840, 512, 128, 128 )
+164/tile_mode = 0
+164/occluder_offset = Vector2( 64, 64 )
+164/navigation_offset = Vector2( 64, 64 )
+164/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+164/z_index = 0
+165/name = "Wr_L1"
+165/texture = ExtResource( 1 )
+165/tex_offset = Vector2( 0, 0 )
+165/modulate = Color( 1, 1, 1, 1 )
+165/region = Rect2( 3968, 512, 128, 128 )
+165/tile_mode = 0
+165/occluder_offset = Vector2( 64, 64 )
+165/navigation_offset = Vector2( 64, 64 )
+165/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+165/z_index = 0
+166/name = "Wr_L2"
+166/texture = ExtResource( 1 )
+166/tex_offset = Vector2( 0, 0 )
+166/modulate = Color( 1, 1, 1, 1 )
+166/region = Rect2( 4096, 512, 128, 128 )
+166/tile_mode = 0
+166/occluder_offset = Vector2( 64, 64 )
+166/navigation_offset = Vector2( 64, 64 )
+166/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+166/z_index = 0
+167/name = "Wr_L3"
+167/texture = ExtResource( 1 )
+167/tex_offset = Vector2( 0, 0 )
+167/modulate = Color( 1, 1, 1, 1 )
+167/region = Rect2( 4224, 512, 128, 128 )
+167/tile_mode = 0
+167/occluder_offset = Vector2( 64, 64 )
+167/navigation_offset = Vector2( 64, 64 )
+167/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+167/z_index = 0
+168/name = "Wr_L4"
+168/texture = ExtResource( 1 )
+168/tex_offset = Vector2( 0, 0 )
+168/modulate = Color( 1, 1, 1, 1 )
+168/region = Rect2( 4352, 512, 128, 128 )
+168/tile_mode = 0
+168/occluder_offset = Vector2( 64, 64 )
+168/navigation_offset = Vector2( 64, 64 )
+168/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+168/z_index = 0
+169/name = "Wr_Nudge1"
+169/texture = ExtResource( 1 )
+169/tex_offset = Vector2( 0, 0 )
+169/modulate = Color( 1, 1, 1, 1 )
+169/region = Rect2( 4480, 512, 128, 128 )
+169/tile_mode = 0
+169/occluder_offset = Vector2( 64, 64 )
+169/navigation_offset = Vector2( 64, 64 )
+169/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+169/z_index = 0
+170/name = "Wr_Nudge2"
+170/texture = ExtResource( 1 )
+170/tex_offset = Vector2( 0, 0 )
+170/modulate = Color( 1, 1, 1, 1 )
+170/region = Rect2( 4608, 512, 128, 128 )
+170/tile_mode = 0
+170/occluder_offset = Vector2( 64, 64 )
+170/navigation_offset = Vector2( 64, 64 )
+170/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+170/z_index = 0
+171/name = "Wr_Nudge3"
+171/texture = ExtResource( 1 )
+171/tex_offset = Vector2( 0, 0 )
+171/modulate = Color( 1, 1, 1, 1 )
+171/region = Rect2( 4736, 512, 128, 128 )
+171/tile_mode = 0
+171/occluder_offset = Vector2( 64, 64 )
+171/navigation_offset = Vector2( 64, 64 )
+171/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+171/z_index = 0
+172/name = "Wr_Nudge4"
+172/texture = ExtResource( 1 )
+172/tex_offset = Vector2( 0, 0 )
+172/modulate = Color( 1, 1, 1, 1 )
+172/region = Rect2( 4864, 512, 128, 128 )
+172/tile_mode = 0
+172/occluder_offset = Vector2( 64, 64 )
+172/navigation_offset = Vector2( 64, 64 )
+172/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+172/z_index = 0
 

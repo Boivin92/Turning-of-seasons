@@ -679,6 +679,118 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_Edge4/StaticBody2D"]
 shape = SubResource( 1 )
 
+[node name="Sp_L1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 3968, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_L1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_L1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sp_L2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4096, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_L2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_L2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sp_L3" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4224, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_L3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_L3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sp_L4" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4352, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_L4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_L4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sp_Nudge1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4480, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_Nudge1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_Nudge1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sp_Nudge2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4608, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_Nudge2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_Nudge2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sp_Nudge3" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4736, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_Nudge3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_Nudge3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sp_Nudge4" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4864, 128, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sp_Nudge4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sp_Nudge4/StaticBody2D"]
+shape = SubResource( 1 )
+
 [node name="Sm_BottomFancy1" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -1111,6 +1223,118 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_Edge4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_L1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 3968, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_L1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_L1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_L2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4096, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_L2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_L2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_L3" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4224, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_L3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_L3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_L4" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4352, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_L4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_L4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_Nudge1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4480, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_Nudge1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_Nudge1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_Nudge2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4608, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_Nudge2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_Nudge2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_Nudge3" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4736, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_Nudge3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_Nudge3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sm_Nudge4" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4864, 256, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sm_Nudge4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sm_Nudge4/StaticBody2D"]
 shape = SubResource( 1 )
 
 [node name="Fa_BottomFancy1" type="Sprite" parent="."]
@@ -1547,6 +1771,118 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_Edge4/StaticBody2D"]
 shape = SubResource( 1 )
 
+[node name="Fa_L1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 3968, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_L1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_L1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Fa_L2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4096, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_L2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_L2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Fa_L3" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4224, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_L3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_L3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Fa_L4" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4352, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_L4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_L4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Fa_Nudge1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4480, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_Nudge1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_Nudge1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Fa_Nudge2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4608, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_Nudge2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_Nudge2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Fa_Nudge3" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4736, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_Nudge3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_Nudge3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Fa_Nudge4" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4864, 384, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fa_Nudge4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fa_Nudge4/StaticBody2D"]
+shape = SubResource( 1 )
+
 [node name="Wr_BottomFancy1" type="Sprite" parent="."]
 editor/display_folded = true
 texture = ExtResource( 1 )
@@ -1979,5 +2315,117 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_Edge4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_L1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 3968, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_L1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_L1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_L2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4096, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_L2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_L2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_L3" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4224, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_L3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_L3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_L4" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4352, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_L4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_L4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_Nudge1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4480, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_Nudge1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_Nudge1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_Nudge2" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4608, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_Nudge2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_Nudge2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_Nudge3" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4736, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_Nudge3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_Nudge3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wr_Nudge4" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4864, 512, 128, 128 )
+region_filter_clip = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wr_Nudge4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wr_Nudge4/StaticBody2D"]
 shape = SubResource( 1 )
 

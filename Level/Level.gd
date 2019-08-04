@@ -15,7 +15,7 @@ func _ready():
 	NbOfTurn = 0
 
 const FIXED = 17
-const ROW = 31
+const ROW = 39
 func remap_tileset():
 	for x in range(-10, 10):
 		for y in range(-10, 10):
