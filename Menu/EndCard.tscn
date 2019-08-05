@@ -26,8 +26,7 @@ font_data = ExtResource( 6 )
 
 [node name="EndCard" type="AnimatedSprite"]
 frames = SubResource( 1 )
-frame = 4
-playing = true
+frame = 1
 centered = false
 script = ExtResource( 5 )
 
