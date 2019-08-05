@@ -59,13 +59,13 @@ extents = Vector2( 64, 256 )
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 64, 512 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 64, 640 )
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 64, 768 )
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 64, 1536 )
 
 [node name="Level" type="Node2D"]
@@ -288,6 +288,7 @@ rotation = 1.5708
 type = 3
 
 [node name="CrumblingBlocks" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( -3839.66, -4033.4 )
 
 [node name="BreakingBlock" parent="CrumblingBlocks" instance=ExtResource( 9 )]
@@ -541,44 +542,52 @@ type = 6
 
 [node name="ClimbingBlock7" type="Area2D" parent="vignes"]
 editor/display_folded = true
-position = Vector2( 1408, 3072 )
+position = Vector2( 1280, 3072 )
 rotation = -1.5708
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock7"]
-shape = SubResource( 8 )
+shape = SubResource( 12 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
-position = Vector2( 0, 448 )
+position = Vector2( 0, 576 )
 
 [node name="ClimbingPart2" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
-position = Vector2( 0, 320 )
+position = Vector2( 0, 448 )
 type = 4
 
 [node name="ClimbingPart3" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
-position = Vector2( 0, 192 )
+position = Vector2( 0, 320 )
 type = 5
 
 [node name="ClimbingPart4" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
-position = Vector2( 0, 64 )
+position = Vector2( 0, 192 )
 type = 4
 
 [node name="ClimbingPart5" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
-position = Vector2( 0, -64 )
+position = Vector2( 0, 64 )
 type = 5
 
 [node name="ClimbingPart6" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
-position = Vector2( 0, -192 )
+position = Vector2( 0, -64 )
 type = 4
 
 [node name="ClimbingPart7" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
-position = Vector2( 0, -320 )
+position = Vector2( 0, -192 )
 type = 5
 
 [node name="ClimbingPart8" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
+position = Vector2( 0, -320 )
+type = 4
+
+[node name="ClimbingPart9" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
 position = Vector2( 0, -448 )
+type = 5
+
+[node name="ClimbingPart10" parent="vignes/ClimbingBlock7" instance=ExtResource( 10 )]
+position = Vector2( 0, -576 )
 type = 6
 
 [node name="ClimbingBlock8" type="Area2D" parent="vignes"]
@@ -625,86 +634,102 @@ type = 6
 
 [node name="ClimbingBlock9" type="Area2D" parent="vignes"]
 editor/display_folded = true
-position = Vector2( 2048, 3712 )
+position = Vector2( 1920, 3712 )
 rotation = -1.5708
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock9"]
-shape = SubResource( 8 )
+shape = SubResource( 12 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
-position = Vector2( 0, 448 )
+position = Vector2( 0, 576 )
 
 [node name="ClimbingPart2" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
-position = Vector2( 0, 320 )
+position = Vector2( 0, 448 )
 type = 4
 
 [node name="ClimbingPart3" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
-position = Vector2( 0, 192 )
+position = Vector2( 0, 320 )
 type = 5
 
 [node name="ClimbingPart4" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
-position = Vector2( 0, 64 )
+position = Vector2( 0, 192 )
 type = 4
 
 [node name="ClimbingPart5" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
-position = Vector2( 0, -64 )
+position = Vector2( 0, 64 )
 type = 5
 
 [node name="ClimbingPart6" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
-position = Vector2( 0, -192 )
+position = Vector2( 0, -64 )
 type = 4
 
 [node name="ClimbingPart7" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
-position = Vector2( 0, -320 )
+position = Vector2( 0, -192 )
 type = 5
 
 [node name="ClimbingPart8" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
+position = Vector2( 0, -320 )
+type = 4
+
+[node name="ClimbingPart9" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
 position = Vector2( 0, -448 )
+type = 5
+
+[node name="ClimbingPart10" parent="vignes/ClimbingBlock9" instance=ExtResource( 10 )]
+position = Vector2( 0, -576 )
 type = 6
 
 [node name="ClimbingBlock10" type="Area2D" parent="vignes"]
 editor/display_folded = true
-position = Vector2( 2688, 4352 )
+position = Vector2( 2560, 4352 )
 rotation = -1.5708
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock10"]
-shape = SubResource( 8 )
+shape = SubResource( 12 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
-position = Vector2( 0, 448 )
+position = Vector2( 0, 576 )
 
 [node name="ClimbingPart2" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
-position = Vector2( 0, 320 )
+position = Vector2( 0, 448 )
 type = 4
 
 [node name="ClimbingPart3" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
-position = Vector2( 0, 192 )
+position = Vector2( 0, 320 )
 type = 5
 
 [node name="ClimbingPart4" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
-position = Vector2( 0, 64 )
+position = Vector2( 0, 192 )
 type = 4
 
 [node name="ClimbingPart5" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
-position = Vector2( 0, -64 )
+position = Vector2( 0, 64 )
 type = 5
 
 [node name="ClimbingPart6" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
-position = Vector2( 0, -192 )
+position = Vector2( 0, -64 )
 type = 4
 
 [node name="ClimbingPart7" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
-position = Vector2( 0, -320 )
+position = Vector2( 0, -192 )
 type = 5
 
 [node name="ClimbingPart8" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
+position = Vector2( 0, -320 )
+type = 4
+
+[node name="ClimbingPart9" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
 position = Vector2( 0, -448 )
+type = 5
+
+[node name="ClimbingPart10" parent="vignes/ClimbingBlock10" instance=ExtResource( 10 )]
+position = Vector2( 0, -576 )
 type = 6
 
 [node name="ClimbingBlock11" type="Area2D" parent="vignes"]
@@ -716,7 +741,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock11"]
-shape = SubResource( 9 )
+shape = SubResource( 12 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock11" instance=ExtResource( 10 )]
 position = Vector2( 0, 576 )
@@ -766,7 +791,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock12"]
-shape = SubResource( 10 )
+shape = SubResource( 13 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock12" instance=ExtResource( 10 )]
 position = Vector2( 0, 704 )
@@ -824,7 +849,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vignes/ClimbingBlock13"]
-shape = SubResource( 11 )
+shape = SubResource( 14 )
 
 [node name="ClimbingPart1" parent="vignes/ClimbingBlock13" instance=ExtResource( 10 )]
 position = Vector2( 0, 1472 )
