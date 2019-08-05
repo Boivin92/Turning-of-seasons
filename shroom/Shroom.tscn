@@ -2,9 +2,9 @@
 
 [ext_resource path="res://shroom/Shroom.gd" type="Script" id=1]
 [ext_resource path="res://shroom/sprites/spring/Mushroom_PRINTEMPS.png" type="Texture" id=2]
-[ext_resource path="res://shroom/sprites/summer/Mushroom_SUMMER.png" type="Texture" id=3]
-[ext_resource path="res://shroom/sprites/winter/Mushroom_WINTER.png" type="Texture" id=4]
-[ext_resource path="res://shroom/sprites/fall/mushroom_FALL.png" type="Texture" id=5]
+[ext_resource path="res://shroom/sprites/fall/mushroom_FALL.png" type="Texture" id=3]
+[ext_resource path="res://shroom/sprites/summer/Mushroom_SUMMER.png" type="Texture" id=4]
+[ext_resource path="res://shroom/sprites/winter/Mushroom_WINTER.png" type="Texture" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -15,17 +15,17 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": false,
-"name": "summer",
+"name": "fall",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
 "loop": false,
-"name": "winter",
+"name": "summer",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],
 "loop": false,
-"name": "fall",
+"name": "winter",
 "speed": 5.0
 } ]
 
