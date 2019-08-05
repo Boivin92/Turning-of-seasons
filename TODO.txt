@@ -1,2 +1,8 @@
 -Empecher le personnage de tomber sur rotations
+
+À voir :
 -pluggé fin du level sur endcard
+-Intégrer les nouvelles vignes dans le level
+
+DONE:
+-Fixé les vignes
