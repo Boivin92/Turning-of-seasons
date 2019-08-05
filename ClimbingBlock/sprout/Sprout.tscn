@@ -1,0 +1,40 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Sprout.gd" type="Script" id=1]
+[ext_resource path="res://ClimbingBlock/fall/SproutFALL.png" type="Texture" id=2]
+[ext_resource path="res://ClimbingBlock/winter/SproutWINTER.png" type="Texture" id=3]
+[ext_resource path="res://ClimbingBlock/summer/SproutSUMMER.png" type="Texture" id=4]
+[ext_resource path="res://ClimbingBlock/spring/SproutPRINTEMPS.png" type="Texture" id=5]
+[ext_resource path="res://ClimbingBlock/summer/vine_middle_A.png" type="Texture" id=6]
+[ext_resource path="res://ClimbingBlock/summer/vine_middle_B.png" type="Texture" id=7]
+[ext_resource path="res://ClimbingBlock/summer/vine_top_1.png" type="Texture" id=8]
+[ext_resource path="res://ClimbingBlock/summer/vine_top_2.png" type="Texture" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 64, 64 )
+
+[node name="Sprout" type="Area2D"]
+script = ExtResource( 1 )
+sprout_fall = ExtResource( 2 )
+sprout_winter = ExtResource( 3 )
+sprout_summer = ExtResource( 4 )
+sprout_spring = ExtResource( 5 )
+middle_A = ExtResource( 6 )
+middle_B = ExtResource( 7 )
+top_A = ExtResource( 8 )
+top_B = ExtResource( 9 )
+height = 4
+
+[node name="SproutSprite" type="Sprite" parent="."]
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="ExtentionsContainer" type="Node" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 4.91089, -162.061 )
+current = true
+[connection signal="body_entered" from="." to="." method="_on_Sprout_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Sprout_body_exited"]
