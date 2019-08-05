@@ -1,5 +1,9 @@
--Fixé les vignes
+-Intégrer les nouvelles vignes dans le level
 -Empecher le personnage de tomber sur rotation
 -Déplacer le level en 0,0
 -pluggé fin du level sur endcard
 -Ready de level, appeler "ChangeSeason_Spring" sur toute
+
+
+DONE:
+-Fixé les vignes
